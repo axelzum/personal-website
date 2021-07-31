@@ -19,4 +19,5 @@ const FirstPost = () => (
     </StyledH2>
   </>
 );
+
 export default FirstPost;

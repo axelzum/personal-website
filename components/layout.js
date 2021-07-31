@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import Navbar from './navbar';
+import Header from './header';
 import Footer from './footer';
 
 const StyledLayout = styled.div`
@@ -11,7 +11,7 @@ const StyledLayout = styled.div`
 
 const Layout = ({ children }) => (
   <>
-    <Navbar />
+    <Header />
     <StyledLayout>{children}</StyledLayout>
     <Footer />
   </>
