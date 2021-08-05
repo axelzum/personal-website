@@ -7,18 +7,19 @@ const StyledLinkContainer = styled.div`
   column-gap: 10px;
   justify-content: center;
   align-items: center;
+  text-align: center;
   flex-grow: 1;
 `;
 
 const HeaderNavbar = () => (
   <StyledLinkContainer>
-    <Link href='/posts/work-experience'>
+    <Link href='/work-experience'>
       <a>{'Work Experience'}</a>
     </Link>
-    <Link href='/posts/activities'>
+    <Link href='/activities'>
       <a>{'Activities and Interests'}</a>
     </Link>
-    <Link href='/posts/projects'>
+    <Link href='/projects'>
       <a>{'Projects'}</a>
     </Link>
   </StyledLinkContainer>

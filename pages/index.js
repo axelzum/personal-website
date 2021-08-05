@@ -52,10 +52,7 @@ const Home = () => (
     <StyledHomeContainer>
       <StyledMain>
         <StyledH1>
-          {'Read'}{' '}
-          <Link href='/posts/first-post'>
-            <a>{'this page!'}</a>
-          </Link>
+          {'placeholder'}
         </StyledH1>
 
         <StyledP>
