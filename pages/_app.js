@@ -7,8 +7,7 @@ const GlobalStyle = createGlobalStyle`
   html, body {
     padding: 0;
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
-    Helvetica Neue, sans-serif;
+    font-family: century-gothic, sans-serif;
   }
 
   a {
@@ -23,7 +22,7 @@ const GlobalStyle = createGlobalStyle`
 
 const theme = {
   colors: {
-    primary: '#0070f3',
+    primary: '#223286',
   },
 };
 
@@ -40,6 +39,7 @@ const AppLayout = ({ Component, pageProps }) => (
       <meta content='#223286' name='msapplication-TileColor' />
       <meta content='/favicons/browserconfig.xml' name='msapplication-config' />
       <meta content='#ffffff' name='theme-color' />
+      <link href='https://use.typekit.net/oov2wcw.css' rel='stylesheet' />
     </Head>
     <GlobalStyle />
     <ThemeProvider theme={theme}>

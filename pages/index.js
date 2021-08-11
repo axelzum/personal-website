@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import Link from 'next/link';
 import styled from 'styled-components';
 
 const StyledHomeContainer = styled.div`
@@ -38,6 +37,7 @@ const StyledH1 = styled.h1`
 `;
 
 const StyledP = styled.p`
+  color: ${(props) => props.theme.colors.primary};
   text-align: center;
   line-height: 1.5;
   font-size: 1.5rem;
@@ -51,9 +51,7 @@ const Home = () => (
     </Head>
     <StyledHomeContainer>
       <StyledMain>
-        <StyledH1>
-          {'placeholder'}
-        </StyledH1>
+        <StyledH1>{'placeholder'}</StyledH1>
 
         <StyledP>
           {'Get started by editing'} <code>{'pages/index.js'}</code>
