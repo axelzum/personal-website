@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import HeaderNavbar from './header-navbar';
+import Image from 'next/image';
 
 const StyledHeader = styled.header`
   width: 100%;
@@ -11,9 +12,12 @@ const StyledHeader = styled.header`
 `;
 
 const Header = () => (
-  <StyledHeader>
-    <HeaderNavbar />
-  </StyledHeader>
+  <>
+    <Image height={50} src='/images/icon.jpg' width={50} />
+    <StyledHeader>
+      <HeaderNavbar />
+    </StyledHeader>
+  </>
 );
 
 export default Header;
