@@ -10,11 +10,11 @@ const WorkExperience = () => (
   <>
     <Head>
       <title>{'Projects'}</title>
-      <meta content='Description of projects worked on' name='description' />
+      <meta content="Description of projects worked on" name="description" />
     </Head>
     <h1>{'Projects'}</h1>
     <StyledH2>
-      <Link href='/'>
+      <Link href="/">
         <a>{'Back to home'}</a>
       </Link>
     </StyledH2>
