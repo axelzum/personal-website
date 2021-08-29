@@ -13,21 +13,26 @@ const StyledHeader = styled.header`
 
 const StyledNameContainer = styled.div`
   padding-left: 15px;
+
   h1 {
-    margin: 0px;
+    margin: 0;
+    width: 138px;
     color: ${(props) => props.theme.colors.primary};
   }
 `;
 
 const Header = () => (
-  <StyledHeader>
-    <Image height={100} layout="fixed" src="/images/icon.jpg" width={100}/>
-    <StyledNameContainer>
-      <h1>{'Axel'}</h1>
-      <h1>{'Zumwalt'}</h1>
-    </StyledNameContainer>
-    <HeaderNavbar/>
-  </StyledHeader>
-);
+    <StyledHeader>
+      <div style={{height: 100}}>
+        <Image height={100} layout="fixed" src="/images/icon.jpg" width={100}/>
+      </div>
+      <StyledNameContainer>
+        <h1>{'Axel'}</h1>
+        <h1>{'Zumwalt'}</h1>
+      </StyledNameContainer>
+        <HeaderNavbar/>
+    </StyledHeader>
+  )
+;
 
 export default Header;

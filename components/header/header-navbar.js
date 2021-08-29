@@ -7,9 +7,12 @@ const StyledLinkContainer = styled.div`
 `;
 
 const StyledNavbarContainer = styled.div`
+  padding-right: 253px;
   margin: auto;
   display: flex;
+  justify-content: center;
   align-items: center;
+  align-self: center;
 `;
 
 const HeaderNavbar = () => (
