@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 import Header from './header/header';
-import Footer from './footer';
+import Footer from './footer/footer';
 
 const StyledLayout = styled.div`
   padding: 0 1rem;
