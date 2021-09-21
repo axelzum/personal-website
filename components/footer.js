@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import Image from 'next/image';
 
 const StyledLogo = styled.span`
-  height: 1em;
   margin-left: 0.5rem;
 `;
 
@@ -15,25 +14,38 @@ const StyledFooter = styled.footer`
   align-items: center;
 `;
 
-const StyledFooterAnchor = styled.a`
-  display: flex;
-  justify-content: center;
+const StyledCopyright = styled.div`
   align-items: center;
-  flex-grow: 1;
+`;
+
+const StyledSocialContainer = styled.div`
+  position: absolute;
+  right: 100px;
 `;
 
 const Footer = () => (
   <StyledFooter>
-    <StyledFooterAnchor
-      href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-      rel="noopener noreferrer"
-      target="_blank"
-    >
-      {'Powered by'}{' '}
-      <StyledLogo>
-        <Image alt="Vercel Logo" height={16} src="/vercel.svg" width={72} />
-      </StyledLogo>
-    </StyledFooterAnchor>
+    <StyledCopyright>
+      {'Axel Zumwalt ©2021'}
+    </StyledCopyright>
+    <StyledSocialContainer>
+      <a
+        href="https://www.linkedin.com/in/axel-zumwalt"
+        rel="noopener noreferrer"
+        target="_blank">
+        <StyledLogo>
+          <Image alt="LinkedIn Logo" height={30} src="/logos/linkedin.png" width={30}/>
+        </StyledLogo>
+      </a>
+      <a
+        href="https://github.com/axelzum"
+        rel="noopener noreferrer"
+        target="_blank">
+        <StyledLogo>
+          <Image alt="GitHub Logo" height={30} src="/logos/github.png" width={30}/>
+        </StyledLogo>
+      </a>
+    </StyledSocialContainer>
   </StyledFooter>
 );
 
