@@ -18,6 +18,11 @@ const StyledNavbarContainer = styled.div`
 const HeaderNavbar = () => (
     <StyledNavbarContainer>
       <StyledLinkContainer>
+        <Link href="/">
+          <a>{'Home'}</a>
+        </Link>
+      </StyledLinkContainer>
+      <StyledLinkContainer>
         <Link href="/work-experience">
           <a>{'Work Experience'}</a>
         </Link>
