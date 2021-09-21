@@ -32,7 +32,8 @@ const Footer = () => (
       <a
         href="https://www.linkedin.com/in/axel-zumwalt"
         rel="noopener noreferrer"
-        target="_blank">
+        target="_blank"
+        title="https://www.linkedin.com/in/axel-zumwalt">
         <StyledLogo>
           <Image alt="LinkedIn Logo" height={30} src="/logos/linkedin.png" width={30}/>
         </StyledLogo>
@@ -40,7 +41,8 @@ const Footer = () => (
       <a
         href="https://github.com/axelzum"
         rel="noopener noreferrer"
-        target="_blank">
+        target="_blank"
+        title="https://github.com/axelzum">
         <StyledLogo>
           <Image alt="GitHub Logo" height={30} src="/logos/github.png" width={30}/>
         </StyledLogo>
