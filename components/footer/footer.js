@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import IconLinks from "./icon-links";
+import IconLinks from './icon-links';
 
 const StyledFooter = styled.footer`
   width: 100%;

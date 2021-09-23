@@ -2,7 +2,7 @@ import {createGlobalStyle} from 'styled-components';
 import Head from 'next/head';
 
 import Layout from '../components/layout';
-import Theme from "../public/theme";
+import Theme from '../public/theme';
 
 const GlobalStyle = createGlobalStyle`
   html, body {
