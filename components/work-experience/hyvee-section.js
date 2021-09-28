@@ -17,7 +17,7 @@ const HyveeSection = () => (
     </StyledSectionTitle>
     <StyledDate>{'May 2021–Present'}</StyledDate>
     <StyledDropdownArrow>
-      <DropdownArrow/>
+      <DropdownArrow />
     </StyledDropdownArrow>
   </StyledSection>
 );

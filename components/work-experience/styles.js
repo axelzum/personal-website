@@ -11,8 +11,7 @@ const StyledSection = styled.div`
   }
 `;
 
-const StyledSectionTitle = styled.div`
-`;
+const StyledSectionTitle = styled.div``;
 
 const StyledSectionHeader = styled.p`
   font-size: 1.5em;
@@ -34,4 +33,11 @@ const StyledDropdownArrow = styled.div`
   margin-right: 1vw;
 `;
 
-export { StyledSection, StyledSectionHeader, StyledSectionSubheader, StyledSectionTitle, StyledDate, StyledDropdownArrow };
+export {
+  StyledSection,
+  StyledSectionHeader,
+  StyledSectionSubheader,
+  StyledSectionTitle,
+  StyledDate,
+  StyledDropdownArrow,
+};

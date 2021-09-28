@@ -19,7 +19,7 @@ const CollinsSection = () => (
     </StyledSectionTitle>
     <StyledDate>{'May 2019–August 2020'}</StyledDate>
     <StyledDropdownArrow>
-      <DropdownArrow/>
+      <DropdownArrow />
     </StyledDropdownArrow>
   </StyledSection>
 );

@@ -17,7 +17,7 @@ const SoftronicsSection = () => (
     </StyledSectionTitle>
     <StyledDate>{'May 2016–August 2018'}</StyledDate>
     <StyledDropdownArrow>
-      <DropdownArrow/>
+      <DropdownArrow />
     </StyledDropdownArrow>
   </StyledSection>
 );
