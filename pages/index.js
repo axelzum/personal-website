@@ -47,7 +47,7 @@ const Home = () => (
   <>
     <Head>
       <title>{'Axel Zumwalt'}</title>
-      <meta content="Personal resume website" name="description" />
+      <meta content='Personal resume website' name='description' />
     </Head>
     <StyledHomeContainer>
       <StyledMain>

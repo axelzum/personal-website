@@ -13,21 +13,18 @@ const StyledLogo = styled.span`
 const IconLinks = () => (
   <StyledSocialContainer>
     <a
-      href="https://www.linkedin.com/in/axel-zumwalt"
-      rel="noopener noreferrer"
-      target="_blank"
-      title="https://www.linkedin.com/in/axel-zumwalt">
+      href='https://www.linkedin.com/in/axel-zumwalt'
+      rel='noopener noreferrer'
+      target='_blank'
+      title='https://www.linkedin.com/in/axel-zumwalt'
+    >
       <StyledLogo>
-        <Image alt="LinkedIn Logo" height={30} src="/images/logos/linkedin.png" width={30}/>
+        <Image alt='LinkedIn Logo' height={30} src='/images/logos/linkedin.png' width={30} />
       </StyledLogo>
     </a>
-    <a
-      href="https://github.com/axelzum"
-      rel="noopener noreferrer"
-      target="_blank"
-      title="https://github.com/axelzum">
+    <a href='https://github.com/axelzum' rel='noopener noreferrer' target='_blank' title='https://github.com/axelzum'>
       <StyledLogo>
-        <Image alt="GitHub Logo" height={30} src="/images/logos/github.png" width={30}/>
+        <Image alt='GitHub Logo' height={30} src='/images/logos/github.png' width={30} />
       </StyledLogo>
     </a>
   </StyledSocialContainer>

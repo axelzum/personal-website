@@ -7,38 +7,35 @@ const StyledLinkContainer = styled.div`
 `;
 
 const StyledNavbarContainer = styled.div`
-  padding-right: 253px;
-  margin: auto;
+  //margin: auto;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  align-self: center;
+  margin-left: auto;
+  margin-right: 10px;
 `;
 
 const HeaderNavbar = () => (
-    <StyledNavbarContainer>
-      <StyledLinkContainer>
-        <Link href="/">
-          <a>{'Home'}</a>
-        </Link>
-      </StyledLinkContainer>
-      <StyledLinkContainer>
-        <Link href="/work-experience">
-          <a>{'Work Experience'}</a>
-        </Link>
-      </StyledLinkContainer>
-      <StyledLinkContainer>
-        <Link href="/activities">
-          <a>{'Activities and Interests'}</a>
-        </Link>
-      </StyledLinkContainer>
-      <StyledLinkContainer>
-        <Link href="/projects">
-          <a>{'Projects'}</a>
-        </Link>
-      </StyledLinkContainer>
-    </StyledNavbarContainer>
-  )
-;
+  <StyledNavbarContainer>
+    <StyledLinkContainer>
+      <Link href='/'>
+        <a>{'Home'}</a>
+      </Link>
+    </StyledLinkContainer>
+    <StyledLinkContainer>
+      <Link href='/work-experience'>
+        <a>{'Work Experience'}</a>
+      </Link>
+    </StyledLinkContainer>
+    <StyledLinkContainer>
+      <Link href='/activities'>
+        <a>{'Activities and Interests'}</a>
+      </Link>
+    </StyledLinkContainer>
+    <StyledLinkContainer>
+      <Link href='/projects'>
+        <a>{'Projects'}</a>
+      </Link>
+    </StyledLinkContainer>
+  </StyledNavbarContainer>
+);
 
 export default HeaderNavbar;

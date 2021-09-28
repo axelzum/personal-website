@@ -10,11 +10,11 @@ const Activities = () => (
   <>
     <Head>
       <title>{'Activities and Interests'}</title>
-      <meta content="Detailed history of activities involved in" name="description" />
+      <meta content='Detailed history of activities involved in' name='description' />
     </Head>
     <h1>{'Activities and Interests'}</h1>
     <StyledH2>
-      <Link href="/">
+      <Link href='/'>
         <a>{'Back to home'}</a>
       </Link>
     </StyledH2>

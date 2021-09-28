@@ -17,10 +17,8 @@ const StyledCopyright = styled.div`
 
 const Footer = () => (
   <StyledFooter>
-    <StyledCopyright>
-      {'Axel Zumwalt ©2021'}
-    </StyledCopyright>
-    <IconLinks/>
+    <StyledCopyright>{'Axel Zumwalt ©2021'}</StyledCopyright>
+    <IconLinks />
   </StyledFooter>
 );
 
