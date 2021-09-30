@@ -1,17 +1,6 @@
 import Link from 'next/link';
-import styled from 'styled-components';
 
-const StyledLinkContainer = styled.div`
-  padding: 10px;
-  text-align: center;
-`;
-
-const StyledNavbarContainer = styled.div`
-  //margin: auto;
-  display: flex;
-  margin-left: auto;
-  margin-right: 10px;
-`;
+import { StyledLinkContainer, StyledNavbarContainer } from './styles';
 
 const HeaderNavbar = () => (
   <StyledNavbarContainer>

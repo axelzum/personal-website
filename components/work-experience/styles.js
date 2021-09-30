@@ -11,25 +11,34 @@ const StyledSection = styled.div`
   }
 `;
 
-const StyledSectionTitle = styled.div``;
+const StyledSectionTitle = styled.div`
+  padding-right: 3vw;
+`;
 
 const StyledSectionHeader = styled.p`
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-weight: bold;
   margin: 0;
 `;
 
-const StyledSectionSubheader = styled.i`
-  font-size: 1.17em;
+const StyledSectionSubheader = styled.p`
+  font-size: 1em;
+  font-style: italic;
+  margin: 0;
 `;
 
-const StyledDate = styled.h3`
+const StyledDate = styled.p`
+  font-size: 1.3em;
   font-weight: bolder;
   margin-left: auto;
   margin-right: 1vw;
 `;
 
 const StyledDropdownArrow = styled.div`
+  max-width: 40px;
+  max-height: 20px;
+  width: 100%;
+  height: 100%;
   margin-right: 1vw;
 `;
 
