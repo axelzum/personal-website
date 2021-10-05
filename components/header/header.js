@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import HeaderNavbar from './header-navbar';
+import Navbar from './navbar/navbar-burger';
 import { ImageContainer, StyledHeader, StyledNameContainer } from './styles';
 
 const Header = () => (
@@ -12,7 +12,7 @@ const Header = () => (
       <h1>{'Axel'}</h1>
       <h1>{'Zumwalt'}</h1>
     </StyledNameContainer>
-    <HeaderNavbar />
+    <Navbar/>
   </StyledHeader>
 );
 
