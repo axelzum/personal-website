@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const StyledSocialContainer = styled.div`
   position: absolute;
-  right: 100px;
+  right: 2vw;
 `;
 
 const StyledLogo = styled.span`

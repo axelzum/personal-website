@@ -9,7 +9,7 @@ const StyledBurger = styled.div`
   width: 4vh;
   height: 4vh;
   position: fixed;
-  right: 2vh;
+  right: 3vw;
   z-index: 20;
   display: none;
   @media (max-width: 768px) {
@@ -59,7 +59,7 @@ const StyledRightNav = styled.ul`
     top: 0;
     right: 0;
     height: 100vh;
-    width: 300px;
+    width: 30vh;
     padding-top: 3.5rem;
     transition: transform 0.3s ease-in-out;
     z-index: 1;
