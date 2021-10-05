@@ -16,19 +16,19 @@ const StyledSectionTitle = styled.div`
 `;
 
 const StyledSectionHeader = styled.p`
-  font-size: 1.3em;
+  font-size: 3vh;
   font-weight: bold;
   margin: 0;
 `;
 
 const StyledSectionSubheader = styled.p`
-  font-size: 1em;
+  font-size: 2.3vh;
   font-style: italic;
   margin: 0;
 `;
 
 const StyledDate = styled.p`
-  font-size: 1.3em;
+  font-size: 3vh;
   font-weight: bolder;
   margin-left: auto;
   margin-right: 1vw;

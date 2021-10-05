@@ -15,11 +15,6 @@ const GlobalStyle = createGlobalStyle`
     color: inherit;
     text-decoration: none;
   }
-  
-  h1 {
-    font-size: 3.7vh;
-  }
-  
 `;
 
 const AppLayout = ({ Component, pageProps }) => (
