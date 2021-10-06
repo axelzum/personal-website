@@ -24,4 +24,4 @@ const ImageContainer = styled.div`
   width: 100%;
 `;
 
-export {ImageContainer, StyledHeader, StyledNameContainer};
+export { ImageContainer, StyledHeader, StyledNameContainer };

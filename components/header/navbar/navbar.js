@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
-import {StyledNavbar, StyledRightNav} from './styles';
+import { StyledNavbar, StyledRightNav } from './styles';
 
-const Navbar = ({open}) => (
+const Navbar = ({ open }) => (
   <StyledNavbar>
     <StyledRightNav open={open}>
       <li>
@@ -27,6 +27,6 @@ const Navbar = ({open}) => (
       </li>
     </StyledRightNav>
   </StyledNavbar>
-)
+);
 
 export default Navbar;

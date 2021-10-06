@@ -12,7 +12,7 @@ const Header = () => (
       <h1>{'Axel'}</h1>
       <h1>{'Zumwalt'}</h1>
     </StyledNameContainer>
-    <Navbar/>
+    <Navbar />
   </StyledHeader>
 );
 

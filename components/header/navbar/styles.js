@@ -19,20 +19,20 @@ const StyledBurger = styled.div`
   }
   div {
     width: 4vh;
-    height: .4vh;
-    background-color: ${({ open }) => open ? '#ccc' : '#333'};
+    height: 0.4vh;
+    background-color: ${({ open }) => (open ? '#ccc' : '#333')};
     border-radius: 10px;
     transform-origin: 1px;
-    transition: all 0.3s linear;
+    transition: all 0.3s ease;
     &:nth-child(1) {
-      transform: ${({ open }) => open ? 'rotate(45deg)' : 'rotate(0)'};
+      transform: ${({ open }) => (open ? 'rotate(45deg)' : 'rotate(0)')};
     }
     &:nth-child(2) {
-      transform: ${({ open }) => open ? 'translateX(100%)' : 'translateX(0)'};
-      opacity: ${({ open }) => open ? 0 : 1};
+      transform: ${({ open }) => (open ? 'translateX(100%)' : 'translateX(0)')};
+      opacity: ${({ open }) => (open ? 0 : 1)};
     }
     &:nth-child(3) {
-      transform: ${({ open }) => open ? 'rotate(-45deg)' : 'rotate(0)'};
+      transform: ${({ open }) => (open ? 'rotate(-45deg)' : 'rotate(0)')};
     }
   }
 `;
@@ -55,13 +55,13 @@ const StyledRightNav = styled.ul`
     flex-flow: column nowrap;
     background-color: ${(props) => props.theme.colors.primary};
     position: fixed;
-    transform: ${({open}) => open ? 'translateX(0)' : 'translateX(100%)'};
+    transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(100%)')};
     top: 0;
     right: 0;
     height: 100vh;
     width: 30vh;
     padding-top: 3.5rem;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease;
     z-index: 1;
     margin: 0;
     li {
@@ -71,4 +71,4 @@ const StyledRightNav = styled.ul`
   }
 `;
 
-export {StyledNavbar, StyledBurger, StyledRightNav};
+export { StyledNavbar, StyledBurger, StyledRightNav };

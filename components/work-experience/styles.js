@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 const StyledSection = styled.div`
   display: flex;
@@ -40,6 +40,21 @@ const StyledDropdownArrow = styled.div`
   width: 100%;
   height: 100%;
   margin-right: 1vw;
+
+  ${(props) =>
+    props.isOpen
+      ? css`
+           {
+            transform: rotate(180deg);
+            transition: transform 0.3s ease;
+          }
+        `
+      : css`
+           {
+            transform: rotate(0deg);
+            transition: transform 0.3s ease;
+          }
+        `};
 `;
 
 export {
