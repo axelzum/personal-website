@@ -8,7 +8,7 @@ const StyledNavbar = styled.nav`
 const StyledBurger = styled.div`
   width: 4vh;
   height: 4vh;
-  position: fixed;
+  position: absolute;
   right: 3vw;
   z-index: 20;
   display: none;

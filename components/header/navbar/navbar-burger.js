@@ -1,14 +1,15 @@
-import { useState } from 'react';
+import {useState} from 'react';
 
 import RightNav from './navbar';
 import { StyledBurger } from './styles';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const handleToggle = () => setOpen(!open);
 
   return (
     <>
-      <StyledBurger onClick={() => setOpen(!open)} open={open}>
+      <StyledBurger onClick={handleToggle} open={open}>
         <div />
         <div />
         <div />
