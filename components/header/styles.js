@@ -3,6 +3,10 @@ import styled from 'styled-components';
 const StyledHeader = styled.header`
   max-width: 100%;
   border-bottom: 1px solid #eaeaea;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
 `;
 
 const StyledNameContainer = styled.div`

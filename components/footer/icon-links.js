@@ -2,8 +2,7 @@ import Image from 'next/image';
 import styled from 'styled-components';
 
 const StyledSocialContainer = styled.div`
-  position: absolute;
-  right: 2vw;
+  padding-right: 2vw;
 `;
 
 const StyledLogo = styled.span`
