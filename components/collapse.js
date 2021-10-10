@@ -1,4 +1,4 @@
-import {forwardRef} from 'react';
+import { forwardRef } from 'react';
 import AnimateHeight from 'react-animate-height';
 import styled from 'styled-components';
 
@@ -35,6 +35,7 @@ const Collapse = forwardRef(
     >
       <div ref={ref} {...rest} />
     </StyledAnimateHeight>
-  ));
+  ),
+);
 
 export default Collapse;

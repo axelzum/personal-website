@@ -14,7 +14,7 @@ const StyledFooter = styled.footer`
 
 const StyledContactInfo = styled.span`
   padding-left: 2vw;
-  
+
   p {
     margin: 0;
   }
@@ -27,7 +27,7 @@ const Footer = () => (
       <p>{'319-389-8064'}</p>
     </StyledContactInfo>
     <p>{'Axel Zumwalt @2021'}</p>
-    <IconLinks/>
+    <IconLinks />
   </StyledFooter>
 );
 

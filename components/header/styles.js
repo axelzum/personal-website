@@ -7,6 +7,7 @@ const StyledHeader = styled.header`
   top: 0;
   width: 100%;
   background: white;
+  z-index: 1;
 `;
 
 const StyledNameContainer = styled.div`

@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import { useState } from 'react';
 
 import DropdownArrow from '../dropdown-arrow';
 import Collapse from '../collapse';
@@ -25,12 +25,10 @@ const HyveeSection = () => {
         </StyledSectionTitle>
         <StyledDate>{'May 2021–Present'}</StyledDate>
         <StyledDropdownArrow isOpen={show}>
-          <DropdownArrow/>
+          <DropdownArrow />
         </StyledDropdownArrow>
       </StyledSection>
-      <Collapse isOpen={show}>
-        {'test'}
-      </Collapse>
+      <Collapse isOpen={show}>{'test'}</Collapse>
     </>
   );
 };
