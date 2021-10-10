@@ -1,6 +1,7 @@
-import { useState } from 'react';
+import {useState} from 'react';
 
 import DropdownArrow from '../dropdown-arrow';
+import Collapse from '../collapse';
 
 import {
   StyledDate,
@@ -16,16 +17,21 @@ const HyveeSection = () => {
   const handleToggle = () => setShow(!show);
 
   return (
-    <StyledSection onClick={handleToggle}>
-      <StyledSectionTitle>
-        <StyledSectionHeader>{'Hy-Vee, Helpful Smiles Technology • Grimes, Iowa'}</StyledSectionHeader>
-        <StyledSectionSubheader>{'Software Engineering Intern, Ecommerce Fulfillment'}</StyledSectionSubheader>
-      </StyledSectionTitle>
-      <StyledDate>{'May 2021–Present'}</StyledDate>
-      <StyledDropdownArrow isOpen={show}>
-        <DropdownArrow />
-      </StyledDropdownArrow>
-    </StyledSection>
+    <>
+      <StyledSection onClick={handleToggle}>
+        <StyledSectionTitle>
+          <StyledSectionHeader>{'Hy-Vee, Helpful Smiles Technology • Grimes, Iowa'}</StyledSectionHeader>
+          <StyledSectionSubheader>{'Software Engineering Intern, Ecommerce Fulfillment'}</StyledSectionSubheader>
+        </StyledSectionTitle>
+        <StyledDate>{'May 2021–Present'}</StyledDate>
+        <StyledDropdownArrow isOpen={show}>
+          <DropdownArrow/>
+        </StyledDropdownArrow>
+      </StyledSection>
+      <Collapse isOpen={show}>
+        {'test'}
+      </Collapse>
+    </>
   );
 };
 
@@ -33,40 +39,7 @@ export default HyveeSection;
 
 /*
 
-      StyledAnimateHeight = styled(AnimateHeight)` //import AnimateHeight from 'react-animate-height'
-        transition: height 0.2s ease, opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
-        transform: translateY(-0.625rem);
 
-      const Collapse = forwradRef(
-        (
-          {
-            isOpen,
-            animateOpacity = true
-            onAnimationStart,
-            onAnimationEnd,
-            duration,
-            easing = 'ease'
-            startingHeight = 0,
-            endingHeight = 'auto',
-            ..rest
-          },
-          ref
-        ) => {
-          return(
-            <StyledAnimateHeight
-              animateOpacity=animateOpacity}
-              applyInlineTransitions={false}
-              data-testid="collapse-container"
-              duration={duration}
-              easing={easing}
-              height={isOpen ? endingHeight : startingHeight}
-              {...{
-                onAnimationEnd,
-                onAnimationStart
-              }}
-            >
-              <div ref={ref} {...rest} />
-            </StyledAnimateHeight
 
 
 
