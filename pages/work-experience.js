@@ -1,9 +1,7 @@
 import Head from 'next/head';
 import styled from 'styled-components';
 
-import HyveeSection from '../components/work-experience/hyvee-section';
-import CollinsSection from '../components/work-experience/collins-section';
-import SoftronicsSection from '../components/work-experience/softronics-section';
+import WorkExperienceSection from '../components/work-experience/work-experience-section';
 
 import StyledH1 from './styles';
 
@@ -21,9 +19,21 @@ const WorkExperience = () => (
 
     <StyledH1>{'Work Experience'}</StyledH1>
     <StyledWorkExperiences>
-      <HyveeSection />
-      <CollinsSection />
-      <SoftronicsSection />
+      <WorkExperienceSection
+        date='May 2021–Present'
+        header='Hy-Vee, Helpful Smiles Technology • Grimes, Iowa'
+        subheader='Software Engineering Intern, Ecommerce Fulfillment'
+      />
+      <WorkExperienceSection
+        date='May 2019–August 2020'
+        header='Collins Aerospace, Mission Systems • Cedar Rapids, Iowa'
+        subheader='Software Engineering Intern, Test and Training Instrumentation'
+      />
+      <WorkExperienceSection
+        date='May 2016–August 2018'
+        header='Softronics Ltd. • Marion, Iowa'
+        subheader='Intern'
+      />
     </StyledWorkExperiences>
   </>
 );

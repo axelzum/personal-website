@@ -11,8 +11,11 @@ const StyledSection = styled.div`
   }
 `;
 
-const StyledSectionTitle = styled.div`
-  padding-right: 3vw;
+const StyledTextGrid = styled.div`
+  display: grid;
+  grid-template-columns: 50vw 20vw;
+  grid-column-gap: 1vw;
+  align-items: center;
 `;
 
 const StyledSectionHeader = styled.p`
@@ -30,17 +33,16 @@ const StyledSectionSubheader = styled.p`
 const StyledDate = styled.p`
   font-size: 3vh;
   font-weight: bolder;
-  margin-left: auto;
-  margin-right: 1vw;
 `;
 
 const StyledDropdownArrow = styled.div`
-  max-width: 40px;
-  max-height: 20px;
+  max-width: 5vh;
+  max-height: 2.5vh;
   width: 100%;
-  height: 100%;
+  height: 50%;
   margin-right: 1vw;
-
+  margin-left: auto;
+  
   ${(props) =>
     props.isOpen
       ? css`
@@ -59,9 +61,9 @@ const StyledDropdownArrow = styled.div`
 
 export {
   StyledSection,
+  StyledTextGrid,
   StyledSectionHeader,
   StyledSectionSubheader,
-  StyledSectionTitle,
   StyledDate,
   StyledDropdownArrow,
 };
