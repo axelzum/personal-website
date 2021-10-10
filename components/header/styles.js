@@ -2,10 +2,7 @@ import styled from 'styled-components';
 
 const StyledHeader = styled.header`
   max-width: 100%;
-  height: 10vh;
   border-bottom: 1px solid #eaeaea;
-  display: flex;
-  align-items: center;
 `;
 
 const StyledNameContainer = styled.div`
@@ -24,4 +21,34 @@ const ImageContainer = styled.div`
   width: 100%;
 `;
 
-export { ImageContainer, StyledHeader, StyledNameContainer };
+const StyledNav = styled.nav`
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    align-items: center;
+  }
+`;
+
+const StyledNavbarToggle = styled.div`
+  position: absolute;
+  top: 2.5vh;
+  right: 2vw;
+  cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+`;
+
+const StyledLogo = styled.a`
+  cursor: pointer;
+  flex-shrink: 0;
+
+  div {
+    display: inline-block;
+    vertical-align: middle;
+  }
+`;
+
+export { ImageContainer, StyledHeader, StyledNameContainer, StyledNav, StyledNavbarToggle, StyledLogo };
