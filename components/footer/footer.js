@@ -10,6 +10,7 @@ const StyledFooter = styled.footer`
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  margin-top: 5vh;
 `;
 
 const StyledContactInfo = styled.span`

@@ -8,6 +8,10 @@ const StyledTitleBox = styled.div`
     color: ${(props) => props.theme.colors.primary};
   }
   
+  h2 {
+    font-size: 3vh;
+  }
+  
   h3 {
     font-size: 2.3vh;
   }

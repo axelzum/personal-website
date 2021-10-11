@@ -10,8 +10,8 @@ const Navbar = ({ open }) => (
       </Link>
     </li>
     <li>
-      <Link href='/work-experience'>
-        <a>{'Work Experience'}</a>
+      <Link href='/experience'>
+        <a>{'Experience'}</a>
       </Link>
     </li>
     <li>
