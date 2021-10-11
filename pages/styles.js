@@ -1,9 +1,21 @@
 import styled from 'styled-components';
 
-const StyledH1 = styled.h1`
-  font-size: 4vh;
+const StyledTitleBox = styled.div`
   text-align: center;
-  color: ${(props) => props.theme.colors.primary};
+  
+  h1 {
+    font-size: 4vh;
+    color: ${(props) => props.theme.colors.primary};
+  }
+  
+  h3 {
+    font-size: 2.3vh;
+  }
 `;
 
-export default StyledH1;
+const StyledInfoListContainer = styled.div`
+  width: 80vw;
+  margin: 0 auto;
+`;
+
+export {StyledTitleBox, StyledInfoListContainer};

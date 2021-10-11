@@ -15,13 +15,18 @@ const Navbar = ({ open }) => (
       </Link>
     </li>
     <li>
+      <Link href='/projects'>
+        <a>{'Projects'}</a>
+      </Link>
+    </li>
+    <li>
       <Link href='/activities'>
         <a>{'Activities and Interests'}</a>
       </Link>
     </li>
     <li>
-      <Link href='/projects'>
-        <a>{'Projects'}</a>
+      <Link href='/cpre-494'>
+        <a>{'CprE 494'}</a>
       </Link>
     </li>
   </StyledMainNav>

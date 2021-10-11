@@ -1,14 +1,9 @@
 import Head from 'next/head';
-import styled from 'styled-components';
 
 import InfoSection from '../components/info-section/info-section';
 
-import StyledH1 from './styles';
+import {StyledTitleBox, StyledInfoListContainer} from './styles';
 
-const StyledWorkExperiences = styled.div`
-  width: 80vw;
-  margin: 0 auto;
-`;
 
 const WorkExperience = () => (
   <>
@@ -17,8 +12,10 @@ const WorkExperience = () => (
       <meta content='Detailed work experience history' name='description' />
     </Head>
 
-    <StyledH1>{'Work Experience'}</StyledH1>
-    <StyledWorkExperiences>
+    <StyledTitleBox>
+      <h1>{'Work Experience'}</h1>
+    </StyledTitleBox>
+    <StyledInfoListContainer>
       <InfoSection
         date='May 2021–Present'
         header='Hy-Vee, Helpful Smiles Technology • Grimes, Iowa'
@@ -30,7 +27,7 @@ const WorkExperience = () => (
         subheader='Software Engineering Intern, Test and Training Instrumentation'
       />
       <InfoSection date='May 2016–August 2018' header='Softronics Ltd. • Marion, Iowa' subheader='Intern' />
-    </StyledWorkExperiences>
+    </StyledInfoListContainer>
   </>
 );
 
