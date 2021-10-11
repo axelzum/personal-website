@@ -12,7 +12,7 @@ import {
   StyledTextGrid,
 } from './styles';
 
-const WorkExperienceSection = ({header, subheader, date}) => {
+const InfoSection = ({header, subheader, date}) => {
   const [show, setShow] = useState(false);
   const handleToggle = () => setShow(!show);
 
@@ -35,4 +35,4 @@ const WorkExperienceSection = ({header, subheader, date}) => {
   );
 };
 
-export default WorkExperienceSection;
+export default InfoSection;
