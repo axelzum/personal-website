@@ -12,7 +12,7 @@ import {
   StyledTextGrid,
 } from './styles';
 
-const InfoSection = ({ header, subheader, date }) => {
+const InfoSection = ({ header, subheader, date, collapse }) => {
   const [show, setShow] = useState(false);
   const handleToggle = () => setShow(!show);
 
@@ -30,7 +30,7 @@ const InfoSection = ({ header, subheader, date }) => {
           <DropdownArrow />
         </StyledDropdownArrow>
       </StyledSection>
-      <Collapse isOpen={show}>{'test'}</Collapse>
+      <Collapse isOpen={show}>{collapse}</Collapse>
     </>
   );
 };
