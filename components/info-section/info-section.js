@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import { useState } from 'react';
 
 import DropdownArrow from '../dropdown-arrow';
 import Collapse from '../collapse';
@@ -12,7 +12,7 @@ import {
   StyledTextGrid,
 } from './styles';
 
-const WorkExperienceSection = ({header, subheader, date}) => {
+const InfoSection = ({ header, subheader, date }) => {
   const [show, setShow] = useState(false);
   const handleToggle = () => setShow(!show);
 
@@ -27,7 +27,7 @@ const WorkExperienceSection = ({header, subheader, date}) => {
           <StyledDate>{date}</StyledDate>
         </StyledTextGrid>
         <StyledDropdownArrow isOpen={show}>
-          <DropdownArrow/>
+          <DropdownArrow />
         </StyledDropdownArrow>
       </StyledSection>
       <Collapse isOpen={show}>{'test'}</Collapse>
@@ -35,4 +35,4 @@ const WorkExperienceSection = ({header, subheader, date}) => {
   );
 };
 
-export default WorkExperienceSection;
+export default InfoSection;

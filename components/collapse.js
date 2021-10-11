@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const StyledAnimateHeight = styled(AnimateHeight)`
   transition: height 0.2s ease, opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
-  
+
   div {
     font-size: 2vh;
   }

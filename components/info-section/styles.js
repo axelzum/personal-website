@@ -36,34 +36,27 @@ const StyledDate = styled.p`
 `;
 
 const StyledDropdownArrow = styled.div`
-  max-width: 5vh;
-  max-height: 2.5vh;
-  width: 100%;
-  height: 50%;
+  //max-width: 5vh;
+  //max-height: 2.5vh;
+  width: 8vh;
+  height: 4vh;
   margin-right: 1vw;
   margin-left: auto;
-  
+
   ${(props) =>
     props.isOpen
       ? css`
-           {
+          img {
             transform: rotate(180deg);
             transition: transform 0.3s ease;
           }
         `
       : css`
-           {
+          img {
             transform: rotate(0deg);
             transition: transform 0.3s ease;
           }
         `};
 `;
 
-export {
-  StyledSection,
-  StyledTextGrid,
-  StyledSectionHeader,
-  StyledSectionSubheader,
-  StyledDate,
-  StyledDropdownArrow,
-};
+export { StyledSection, StyledTextGrid, StyledSectionHeader, StyledSectionSubheader, StyledDate, StyledDropdownArrow };
