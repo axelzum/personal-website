@@ -4,7 +4,6 @@ import InfoSection from '../components/info-section/info-section';
 import Softronics from '../components/experience/softronics';
 import Collins from '../components/experience/collins';
 import Hyvee from '../components/experience/hyvee';
-
 import { StyledInfoPageContainer, StyledTitleBox } from '../styles/styles';
 
 const Experience = () => (

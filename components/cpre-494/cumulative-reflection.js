@@ -28,7 +28,8 @@ const CumulativeReflection = () => (
       {
         'In my courses I have had to continuously update my professional and technical skills. At each level of growth throughout my education there was a bump in expectations and skill that I had to be ready for. Almost every year I had to take a new class that used C as programming language. And the expectation got higher every year even though my skills didn’t. This pushed me into having to seek help from resources outside the class to improve my understand of the language and keep building upon my prior knowledge. I know that building on my current skills and learning new ones will be a necessity in the workforce because even if I don’t learn anything more after college, others around me still will and new graduates will come out of school knowing more than me so I will have to put in the work to continue growing and learning to match the pace around me.'
       }
-    </p><p>
+    </p>
+    <p>
       {
         'In my time at Iowa State, I think I did an excellent job in broadening my educational horizons and taking advantage of every learning opportunity in front of me no matter how strange it may have seemed at the time. Because of this I wouldn’t do anything differently if I had to do my undergraduate work again. If anything, I would try and be more diverse with the topics I learned about which would be me pinpoint even better where my best strengths and interests lie.'
       }
