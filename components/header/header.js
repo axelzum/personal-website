@@ -16,7 +16,7 @@ const Header = () => {
         <Link href='/'>
           <StyledLogo>
             <ImageContainer>
-              <Image height={10} layout='responsive' src='/images/icon.jpg' width={10} />
+              <Image height={10} layout='responsive' src='/images/logos/icon.jpg' width={10} />
             </ImageContainer>
             <StyledNameContainer>
               <h1>{'Axel'}</h1>

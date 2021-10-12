@@ -22,4 +22,5 @@ const StyledInfoPageContainer = styled.div`
   margin: 0 auto;
 `;
 
+
 export {StyledTitleBox, StyledInfoPageContainer};
