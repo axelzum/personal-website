@@ -5,7 +5,7 @@ import EthicsEssay from '../components/cpre-494/ethics-essay';
 import GeneralEducationReflection from '../components/cpre-494/general-education-reflection';
 import CumulativeReflection from '../components/cpre-494/cumulative-reflection';
 
-import { StyledInfoPageContainer, StyledTitleBox } from './styles';
+import { StyledInfoPageContainer, StyledTitleBox } from '../styles/styles';
 
 const Cpre494 = () => (
   <>

@@ -5,7 +5,7 @@ import Softronics from '../components/experience/softronics';
 import Collins from '../components/experience/collins';
 import Hyvee from '../components/experience/hyvee';
 
-import { StyledInfoPageContainer, StyledTitleBox } from './styles';
+import { StyledInfoPageContainer, StyledTitleBox } from '../styles/styles';
 
 const Experience = () => (
   <>

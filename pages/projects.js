@@ -6,7 +6,7 @@ import ComS309 from '../components/projects/coms309';
 import CprE491 from '../components/projects/cpre491';
 import HonorsProject from '../components/projects/honors-project';
 
-import { StyledInfoPageContainer, StyledTitleBox } from './styles';
+import { StyledInfoPageContainer, StyledTitleBox } from '../styles/styles';
 
 const Projects = () => (
   <>

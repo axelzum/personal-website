@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-import { StyledInfoPageContainer, StyledTitleBox } from './styles';
+import { StyledInfoPageContainer, StyledTitleBox } from '../styles/styles';
 
 const Activities = () => (
   <>
