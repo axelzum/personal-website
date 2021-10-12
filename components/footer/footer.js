@@ -5,7 +5,7 @@ import IconLinks from './icon-links';
 const StyledFooter = styled.footer`
   width: 100%;
   height: 10vh;
-  border-top: 1px solid #eaeaea;
+  border-top: 1px solid;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -27,7 +27,7 @@ const Footer = () => (
       <p>{'axelzum@gmail.com'}</p>
       <p>{'319-389-8064'}</p>
     </StyledContactInfo>
-    <p>{'Axel Zumwalt @2021'}</p>
+    <p>{'Axel Zumwalt ©2021'}</p>
     <IconLinks />
   </StyledFooter>
 );

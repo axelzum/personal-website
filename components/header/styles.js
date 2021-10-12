@@ -2,12 +2,13 @@ import styled from 'styled-components';
 
 const StyledHeader = styled.header`
   max-width: 100%;
-  border-bottom: 1px solid #eaeaea;
+  border-bottom: 1px solid;
   position: fixed;
   top: 0;
   width: 100%;
   background: white;
   z-index: 1;
+  max-height: 10vh;
 `;
 
 const StyledNameContainer = styled.div`

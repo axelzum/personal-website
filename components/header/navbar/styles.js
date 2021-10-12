@@ -34,9 +34,11 @@ const StyledMainNav = styled.ul`
   list-style-type: none;
   display: ${({ open }) => (open ? 'block' : 'none')};
   margin: 0;
+  background: white;
+  align-items: center;
 
   li {
-    padding: 2vh;
+    padding: 1.5vh;
     text-align: center;
 
     a {
@@ -52,6 +54,7 @@ const StyledMainNav = styled.ul`
 
     li {
       margin: 0;
+      padding: 0 0 0 4vh;
     }
   }
 `;
