@@ -2,7 +2,7 @@ import Head from 'next/head';
 
 import InfoSection from '../components/info-section/info-section';
 
-import {StyledTitleBox, StyledInfoListContainer} from './styles';
+import {StyledInfoPageContainer, StyledTitleBox} from './styles';
 
 
 const Projects = () => (
@@ -12,16 +12,16 @@ const Projects = () => (
       <meta content='Description of projects worked on' name='description'/>
     </Head>
 
-    <StyledTitleBox>
-      <h1>{'Projects Worked On'}</h1>
-    </StyledTitleBox>
-    <StyledInfoListContainer>
+    <StyledInfoPageContainer>
+      <StyledTitleBox>
+        <h1>{'Projects Worked On'}</h1>
+      </StyledTitleBox>
       <InfoSection
         date=''
         header=''
         subheader=''
       />
-    </StyledInfoListContainer>
+    </StyledInfoPageContainer>
   </>
 );
 

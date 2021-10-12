@@ -17,9 +17,9 @@ const StyledTitleBox = styled.div`
   }
 `;
 
-const StyledInfoListContainer = styled.div`
+const StyledInfoPageContainer = styled.div`
   width: 80vw;
   margin: 0 auto;
 `;
 
-export {StyledTitleBox, StyledInfoListContainer};
+export {StyledTitleBox, StyledInfoPageContainer};

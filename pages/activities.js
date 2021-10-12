@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-import {StyledTitleBox} from './styles';
+import {StyledInfoPageContainer, StyledTitleBox} from './styles';
 
 const Activities = () => (
   <>
@@ -9,10 +9,12 @@ const Activities = () => (
       <meta content='Detailed history of activities involved in' name='description'/>
     </Head>
 
-    <StyledTitleBox>
-      <h1>{'Activities and Interests'}</h1>
-      <h2>{'Under Construction: Come Back Soon!'}</h2>
-    </StyledTitleBox>
+    <StyledInfoPageContainer>
+      <StyledTitleBox>
+        <h1>{'Activities and Interests'}</h1>
+        <h2>{'Under Construction: Come Back Soon!'}</h2>
+      </StyledTitleBox>
+    </StyledInfoPageContainer>
   </>
 );
 
