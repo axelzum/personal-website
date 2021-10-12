@@ -21,6 +21,7 @@
   "devDependencies": {
     "babel-plugin-styled-components": "^1.13.2",
     "eslint-config-get-off-my-lawn": "^6.0.1",
+    "eslint-config-next": "^11.1.2",
     "prettier": "^2.3.2",
     "prettier-config-get-off-my-lawn": "^1.0.0"
   }
