@@ -46,31 +46,47 @@ const Home = () => (
   <>
     <Head>
       <title>{'Axel Zumwalt'}</title>
-      <meta content='Personal resume website' name='description'/>
+      <meta content='Personal resume website' name='description' />
     </Head>
 
     <StyledTitle>
-      <h1>{'Axel Zumwalt\'s Portolio Website'}</h1>
+      <h1>{"Axel Zumwalt's Portolio Website"}</h1>
     </StyledTitle>
     <StyledPageContainer>
       <StyledSection>
         <StyledImageContainer>
-          <Image height={350} layout='fixed' src='/images/portrait.jpeg' width={265}/>
+          <Image height={350} layout='fixed' src='/images/portrait.jpeg' width={265} />
         </StyledImageContainer>
       </StyledSection>
       <StyledTextContainer>
-        <h3>{'I am a student at Iowa State University graduating in May of 2022 with a Bachelor of Science in Computer Engineering and a Master of Business Administration.'}</h3>
-        <h3>{'I am a skilled computer software developer with industry experience in ecommerce web-design and object oriented application development'}</h3>
-        <h3>{'My future career objective is build on my existing experiences in project planning, execution, and leadership to become a product manager and lead the design, execution, and delivery of impactful ideas.'}</h3>
+        <h3>
+          {
+            'I am a student at Iowa State University graduating in May of 2022 with a Bachelor of Science in Computer Engineering and a Master of Business Administration.'
+          }
+        </h3>
+        <h3>
+          {
+            'I am a skilled computer software developer with industry experience in ecommerce web-design and object oriented application development'
+          }
+        </h3>
+        <h3>
+          {
+            'My future career objective is build on my existing experiences in project planning, execution, and leadership to become a product manager and lead the design, execution, and delivery of impactful ideas.'
+          }
+        </h3>
       </StyledTextContainer>
       <StyledSection>
         <StyledImageContainer>
-          <a href='/files/Zumwalt_Axel Resume.pdf' rel='noopener noreferrer' target='_blank'
-             title="Axel Zumwalt's Resume">
-            <Image height={350} layout='fixed' src='/images/resume-photo.png' width={265}/>
+          <a
+            href='/files/Zumwalt_Axel Resume.pdf'
+            rel='noopener noreferrer'
+            target='_blank'
+            title="Axel Zumwalt's Resume"
+          >
+            <Image height={350} layout='fixed' src='/images/resume-photo.png' width={265} />
           </a>
         </StyledImageContainer>
-        <p>{'Click to View Axel\'s Resume'}</p>
+        <p>{"Click to View Axel's Resume"}</p>
       </StyledSection>
     </StyledPageContainer>
   </>
