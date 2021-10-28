@@ -1,14 +1,18 @@
-import styled from 'styled-components';
 import Image from 'next/image';
+import styled from 'styled-components';
 
-const StyledParagraph = styled.div`
-  margin-bottom: 0;
-  margin-top: 1vh;
+import {StyledImageContainer, StyledParagraph} from './styles';
+
+const StyledImage = styled(StyledImageContainer)`
+  max-width: 30vh;
+  min-width: 30vh;
 `;
 
 const Hyvee = () => (
   <StyledParagraph>
-    <Image height={125} layout='fixed' src='/images/logos/hyvee.jpg' width={400} />
+    <StyledImage>
+      <Image height={234} layout='responsive' src='/images/logos/hyvee.jpg' width={620}/>
+    </StyledImage>
     <ul>
       <li>
         {'Collaborated with an agile team to solve online grocery ordering solutions using test driven development.'}

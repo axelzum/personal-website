@@ -1,18 +1,18 @@
 import styled from 'styled-components';
 import Image from 'next/image';
 
-const StyledParagraph = styled.div`
-  margin-bottom: 0;
-  margin-top: 1vh;
+import {StyledImageContainer, StyledParagraph} from './styles';
 
-  em {
-    display: block;
-  }
+const StyledImage = styled(StyledImageContainer)`
+  max-width: 50vh;
+  min-width: 50vh;
 `;
 
 const Softronics = () => (
   <StyledParagraph>
-    <Image height={70} layout='fixed' src='/images/logos/softronics.jpg' width={400} />
+    <StyledImage>
+      <Image height={70} layout='responsive' src='/images/logos/softronics.jpg' width={400}/>
+    </StyledImage>
     <em>{'Mechanical Engineering Intern (3rd work-term) • May 2018-August 2018'}</em>
     <ul>
       <li>{'Instrumental in implementing company-wide product data management system for CAD drawings.'}</li>

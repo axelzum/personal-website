@@ -9,7 +9,7 @@ const BachelorCprE = () => (
   <StyledParagraph>
     <h3>{'Honors and Awards'}</h3>
     <ul>
-      <li>{'Class Ranking Top 2%: 2017-2018'}</li>
+      <li>{'Class Ranking Top 2%: 2017'}</li>
       <li>{'Named on Dean\'s List Every Semester'}</li>
       <li>{'President’s Award for Competitive Excellence: 2017, 2018, 2019, 2020'}</li>
       <li>{'Cardinal Leadership Scholar Award Level I: 2017, 2018, 2019, 2020'}</li>

@@ -1,14 +1,18 @@
-import styled from 'styled-components';
 import Image from 'next/image';
+import styled from 'styled-components';
 
-const StyledParagraph = styled.div`
-  margin-bottom: 0;
-  margin-top: 1vh;
+import {StyledImageContainer, StyledParagraph} from './styles';
+
+const StyledImage = styled(StyledImageContainer)`
+  max-width: 50vh;
+  min-width: 50vh;
 `;
 
 const Collins = () => (
   <StyledParagraph>
-    <Image height={70} layout='fixed' src='/images/logos/collins.png' width={400} />
+    <StyledImage>
+      <Image height={88} layout='responsive' src='/images/logos/collins.png' width={512}/>
+    </StyledImage>
     <ul>
       <li>
         {
