@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import styled from 'styled-components';
 
-import {StyledImageContainer, StyledParagraph} from './styles';
+import { StyledImageContainer, StyledParagraph } from '../styles';
 
 const StyledImage = styled(StyledImageContainer)`
   max-width: 30vh;
@@ -11,7 +11,7 @@ const StyledImage = styled(StyledImageContainer)`
 const Hyvee = () => (
   <StyledParagraph>
     <StyledImage>
-      <Image height={234} layout='responsive' src='/images/logos/hyvee.jpg' width={620}/>
+      <Image height={234} layout='responsive' src='/images/logos/hyvee.jpg' width={620} />
     </StyledImage>
     <ul>
       <li>

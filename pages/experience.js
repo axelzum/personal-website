@@ -24,7 +24,7 @@ const Experience = () => (
         collapse={<Hyvee />}
         header='Hy-Vee, Helpful Smiles Technology • Grimes, Iowa'
         info='May 2021–Present'
-        subheader='Software Engineering Intern, Ecommerce Fulfillment'
+        subheader='Software Engineering Intern, Aisles Online: Ecommerce Fulfillment'
       />
       <InfoSection
         collapse={<Collins />}
@@ -43,13 +43,13 @@ const Experience = () => (
         <h2>{'Iowa State University of Science and Technology • Ames, Iowa'}</h2>
       </StyledTitleBox>
       <InfoSection
-        collapse={<MasterBusinessAdministration/>}
+        collapse={<MasterBusinessAdministration />}
         header='Master of Business Administration'
         info='May 2022 • GPA: 3.82'
         subheader='Debbie and Jerry Ivy College of Business'
       />
       <InfoSection
-        collapse={<BachelorCprE/>}
+        collapse={<BachelorCprE />}
         header='Bachelor of Science in Computer Engineering'
         info='May 2022 • GPA: 3.80'
         subheader='College of Engineering'
@@ -57,12 +57,7 @@ const Experience = () => (
       <StyledTitleBox>
         <h2>{'Marion High School • Marion, Iowa'}</h2>
       </StyledTitleBox>
-      <InfoSection
-        collapse={<HighSchool/>}
-        header='High School Diploma'
-        info='May 2017 • GPA: 4.11'
-        subheader=''
-      />
+      <InfoSection collapse={<HighSchool />} header='High School Diploma' info='May 2017 • GPA: 4.11' subheader='' />
     </StyledInfoPageContainer>
   </>
 );
