@@ -1,9 +1,4 @@
-import styled from 'styled-components';
-
-const StyledParagraph = styled.div`
-  margin-bottom: 0;
-  margin-top: 1vh;
-`;
+import { StyledParagraph } from '../styles';
 
 const MasterBusinessAdministration = () => (
   <StyledParagraph>

@@ -14,4 +14,4 @@ const StyledImageContainer = styled.div`
   width: 100%;
 `;
 
-export {StyledParagraph, StyledImageContainer};
+export { StyledParagraph, StyledImageContainer };

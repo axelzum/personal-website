@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import styled from 'styled-components';
 
-import {StyledImageContainer, StyledParagraph} from './styles';
+import { StyledImageContainer, StyledParagraph } from '../styles';
 
 const StyledImage = styled(StyledImageContainer)`
   max-width: 50vh;
@@ -11,7 +11,7 @@ const StyledImage = styled(StyledImageContainer)`
 const Collins = () => (
   <StyledParagraph>
     <StyledImage>
-      <Image height={88} layout='responsive' src='/images/logos/collins.png' width={512}/>
+      <Image height={88} layout='responsive' src='/images/logos/collins.png' width={512} />
     </StyledImage>
     <ul>
       <li>
