@@ -13,6 +13,7 @@ const Softronics = () => (
     <StyledImage>
       <Image height={70} layout='responsive' src='/images/logos/softronics.jpg' width={400} />
     </StyledImage>
+
     <h3>{'Work Overview'}</h3>
     <p>
       {'Softronics Ltd. is a small engineering firm specializing in high frequency radio technology. ' +
