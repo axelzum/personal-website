@@ -24,11 +24,6 @@ const Navbar = ({ open }) => (
         <a>{'Activities and Interests'}</a>
       </Link>
     </li>
-    <li>
-      <Link href='/cpre-494'>
-        <a>{'CprE 494'}</a>
-      </Link>
-    </li>
   </StyledMainNav>
 );
 
