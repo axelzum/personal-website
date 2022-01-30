@@ -8,9 +8,13 @@ const StyledHeader = styled.header`
   background: white;
   z-index: 1;
 
-  box-shadow: ${({ open }) => (open ? '0' : '0px 0px 9px 3px rgba(41,41,41,.25)')};
-  -webkit-box-shadow: ${({ open }) => (open ? '0' : '0px 0px 9px 3px rgba(41,41,41,.25)')};
-  -moz-box-shadow: ${({ open }) => (open ? '0' : '0px 0px 9px 3px rgba(41,41,41,.25)')};
+  @media screen and (min-width: 768px) {
+    box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
+  }
+
+  box-shadow: ${({ isOpen }) => (isOpen ? '0' : '0px 0px 9px 3px rgba(41,41,41,.25)')};
+  -webkit-box-shadow: ${({ isOpen }) => (isOpen ? '0' : '0px 0px 9px 3px rgba(41,41,41,.25)')};
+  -moz-box-shadow: ${({ isOpen }) => (isOpen ? '0' : '0px 0px 9px 3px rgba(41,41,41,.25)')};
 `;
 
 const StyledNameContainer = styled.div`

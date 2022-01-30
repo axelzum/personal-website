@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { useState } from 'react';
+import {useState} from 'react';
+import {useDetectClickOutside} from 'react-detect-click-outside'
 
 import NavbarBurger from './navbar/navbar-burger';
 import Navbar from './navbar/navbar';
@@ -9,10 +10,17 @@ import { StyledHeader, StyledLogoLink, StyledNameContainer, StyledNav, StyledNav
 const Header = () => {
   const [open, setOpen] = useState(false);
   const handleToggle = () => setOpen(!open);
+  const handleNavbarClick = () => {
+    if (open) {
+      handleToggle();
+    }
+  };
+
+  const ref = useDetectClickOutside({onTriggered: handleNavbarClick})
 
   return (
-    <StyledHeader open={open}>
-      <StyledNav>
+    <StyledHeader isOpen={open}>
+      <StyledNav ref={ref}>
         <Link href='/'>
           <StyledLogoLink>
             <Image height={80} layout='fixed' src='/images/logos/icon.jpg' width={80} />
@@ -22,9 +30,9 @@ const Header = () => {
             </StyledNameContainer>
           </StyledLogoLink>
         </Link>
-        <Navbar open={open} />
+        <Navbar isOpen={open} linkClicked={handleNavbarClick}/>
         <StyledNavbarToggle onClick={handleToggle}>
-          <NavbarBurger open={open} />
+          <NavbarBurger isOpen={open} />
         </StyledNavbarToggle>
       </StyledNav>
     </StyledHeader>

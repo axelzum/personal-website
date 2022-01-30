@@ -10,29 +10,29 @@ const StyledBurger = styled.div`
   div {
     width: 50px;
     height: 3px;
-    background-color: ${({ open }) => (open ? '#ccc' : '#333')};
+    background-color: ${({ isOpen }) => (isOpen ? '#ccc' : '#333')};
     border-radius: 10px;
     transform-origin: 1px;
     transition: all 0.3s ease;
 
     &:nth-child(1) {
-      transform: ${({ open }) => (open ? 'rotate(45deg)' : 'rotate(0)')};
+      transform: ${({ isOpen }) => (isOpen ? 'rotate(45deg)' : 'rotate(0)')};
     }
 
     &:nth-child(2) {
-      transform: ${({ open }) => (open ? 'translateX(100%)' : 'translateX(0)')};
-      opacity: ${({ open }) => (open ? 0 : 1)};
+      transform: ${({ isOpen }) => (isOpen ? 'translateX(100%)' : 'translateX(0)')};
+      opacity: ${({ isOpen }) => (isOpen ? 0 : 1)};
     }
 
     &:nth-child(3) {
-      transform: ${({ open }) => (open ? 'rotate(-45deg)' : 'rotate(0)')};
+      transform: ${({ isOpen }) => (isOpen ? 'rotate(-45deg)' : 'rotate(0)')};
     }
   }
 `;
 
 const StyledMainNav = styled.ul`
   list-style-type: none;
-  display: ${({ open }) => (open ? 'block' : 'none')};
+  display: ${({ isOpen }) => (isOpen ? 'block' : 'none')};
   margin: 0;
   background: white;
   align-items: center;
