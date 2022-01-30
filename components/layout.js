@@ -5,7 +5,7 @@ import Footer from './footer/footer';
 
 const StyledLayout = styled.div`
   padding: 0 1rem;
-  margin: 10vh auto auto;
+  margin: 100px auto auto;
 `;
 
 const StyledFlexWrapper = styled.div`

@@ -1,15 +1,15 @@
 import styled from 'styled-components';
 
 const StyledBurger = styled.div`
-  width: 5vh;
-  height: 5vh;
+  width: 50px;
+  height: 50px;
   display: flex;
   justify-content: space-around;
   flex-flow: column nowrap;
 
   div {
-    width: 5vh;
-    height: 0.4vh;
+    width: 50px;
+    height: 3px;
     background-color: ${({ open }) => (open ? '#ccc' : '#333')};
     border-radius: 10px;
     transform-origin: 1px;
@@ -37,13 +37,13 @@ const StyledMainNav = styled.ul`
   background: white;
   align-items: center;
 
-  li {
-    padding: 1.5vh;
-    text-align: center;
+  box-shadow: 0px 5px 5px 0px rgba(41, 41, 41, 0.25);
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(41, 41, 41, 0.25);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(41, 41, 41, 0.25);
 
-    a {
-      font-size: 2.2vh;
-    }
+  li {
+    padding: 15px;
+    text-align: center;
   }
 
   @media screen and (min-width: 768px) {
@@ -51,10 +51,15 @@ const StyledMainNav = styled.ul`
     margin-right: 30px;
     flex-direction: row;
     justify-content: flex-end;
+    background: transparent;
+
+    box-shadow: 0px 0px;
+    -webkit-box-shadow: 0px 0px;
+    -moz-box-shadow: 0px 0px;
 
     li {
       margin: 0;
-      padding: 0 0 0 4vh;
+      padding: 0 0 0 30px;
     }
   }
 `;
