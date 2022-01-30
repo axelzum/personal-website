@@ -15,10 +15,6 @@ const GlobalStyle = createGlobalStyle`
     color: inherit;
     text-decoration: none;
   }
-
-  p {
-    font-size: 2vh;
-  }
 `;
 /* eslint-disable react/jsx-sort-props */
 const AppLayout = ({ Component, pageProps }) => (

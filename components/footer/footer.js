@@ -4,17 +4,27 @@ import IconLinks from './icon-links';
 
 const StyledFooter = styled.footer`
   width: 100%;
-  height: 10vh;
-  border-top: 1px solid;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 5vh;
+  height: 80px;
+  border-top: thin solid;
+  margin-top: 30px;
+  //display: flex;
+  //flex-wrap: wrap;
+  //justify-content: space-between;
+  //align-items: center;
 `;
 
-const StyledContactInfo = styled.span`
-  padding-left: 2vw;
+const StyledFooterInfoContainer = styled.div`
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+const StyledContactInfo = styled.div`
+  padding-left: 30px;
+  position: relative;
+  left: 0;
 
   p {
     margin: 0;
@@ -23,12 +33,14 @@ const StyledContactInfo = styled.span`
 
 const Footer = () => (
   <StyledFooter>
-    <StyledContactInfo>
-      <p>{'axelzum@gmail.com'}</p>
-      <p>{'319-389-8064'}</p>
-    </StyledContactInfo>
-    <p>{'Axel Zumwalt ©2022'}</p>
-    <IconLinks />
+    <StyledFooterInfoContainer>
+      <StyledContactInfo>
+        <p>{'axelzum@gmail.com'}</p>
+        <p>{'319-389-8064'}</p>
+      </StyledContactInfo>
+      <p>{'Axel Zumwalt ©2022'}</p>
+      <IconLinks/>
+    </StyledFooterInfoContainer>
   </StyledFooter>
 );
 

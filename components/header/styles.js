@@ -33,8 +33,7 @@ const StyledNameContainer = styled.div`
 
 const StyledNav = styled.nav`
   max-width: 1400px;
-  margin: auto
-;
+  margin: auto;
   
   @media screen and (min-width: 768px) {
     display: flex;
@@ -49,7 +48,7 @@ const StyledNavbarToggle = styled.div`
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  right: 20px;
+  right: 30px;
   cursor: pointer;
 
   @media screen and (min-width: 768px) {
