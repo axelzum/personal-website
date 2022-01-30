@@ -8,7 +8,7 @@ const GlobalStyle = createGlobalStyle`
   html, body {
     padding: 0;
     margin: 0;
-    font-family: Century Gothic, sans-serif;
+    font-family: century-gothic, sans-serif;
   }
 
   a {
@@ -30,6 +30,7 @@ const AppLayout = ({ Component, pageProps }) => (
         <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no' />
         <meta name='HandheldFriendly' content='true' />
 
+        {/* Favicons for different devices and browsers */}
         <link rel='apple-touch-icon' sizes='180x180' href='/favicons/apple-touch-icon.png' />
         <link rel='icon' type='image/png' sizes='32x32' href='/favicons/favicon-32x32.png' />
         <link rel='icon' type='image/png' sizes='16x16' href='/favicons/favicon-16x16.png' />
@@ -56,6 +57,9 @@ const AppLayout = ({ Component, pageProps }) => (
         <meta property='twitter:title' content='Axel Zumwalt - Career Portfolio' />
         <meta property='twitter:description' content='Explore work, experience, and projects of Axel Zumwalt' />
         <meta property='twitter:image' content='/images/portrait.jpeg' />
+
+        {/* Century Gothic Font */}
+        <link href='https://use.typekit.net/oov2wcw.css' rel='stylesheet' />
       </Head>
       <Component {...pageProps} />
     </Layout>
