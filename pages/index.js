@@ -45,8 +45,7 @@ const StyledTitle = styled.div`
 const Home = () => (
   <>
     <Head>
-      <title>{'Axel Zumwalt'}</title>
-      <meta content='Personal resume website' name='description' />
+      <title>{'Axel Zumwalt - Career Portfolio'}</title>
     </Head>
 
     <StyledTitle>

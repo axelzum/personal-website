@@ -8,7 +8,7 @@ const GlobalStyle = createGlobalStyle`
   html, body {
     padding: 0;
     margin: 0;
-    font-family: century-gothic, sans-serif;
+    font-family: Century Gothic, sans-serif;
   }
 
   a {
@@ -26,7 +26,7 @@ const AppLayout = ({ Component, pageProps }) => (
     <GlobalStyle />
     <Layout>
       <Head>
-        <meta charset='utf-8' />
+        <meta charSet='utf-8' />
         <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no' />
         <meta name='HandheldFriendly' content='true' />
 
@@ -39,8 +39,6 @@ const AppLayout = ({ Component, pageProps }) => (
         <meta name='msapplication-TileColor' content='#223286' />
         <meta name='msapplication-config' content='/favicons/browserconfig.xml' />
         <meta name='theme-color' content='#223286' />
-
-        <title>{'Axel Zumwalt - Career Portfolio'}</title>
         <meta name='title' content='Axel Zumwalt - Career Portfolio' />
         <meta name='description' content='Explore work, experience, and projects of Axel Zumwalt' />
         <meta name='author' content='Axel Zumwalt' />
