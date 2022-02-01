@@ -11,6 +11,7 @@ const StyledIntro = styled.div`
 
   @media screen and (min-width: 950px) {
     flex-direction: row;
+    justify-content: center;
   }
 `;
 

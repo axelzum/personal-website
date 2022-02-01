@@ -12,7 +12,7 @@ const StyledResume = styled.a`
 
   @media screen and (min-width: 950px) {
     flex-direction: row;
-    align-content: center;
+    justify-content: center;
   }
 `;
 
