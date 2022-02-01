@@ -9,7 +9,7 @@ const Footer = () => (
         <p>{'axelzum@gmail.com'}</p>
         <p>{'319-389-8064'}</p>
       </StyledContactInfo>
-      <StyledCopyright>{'Axel Zumwalt ©2022'}</StyledCopyright>
+      <StyledCopyright>{'Copyright © Axel Zumwalt 2021-2022'}</StyledCopyright>
       <IconLinks/>
     </StyledFooterInfoContainer>
   </StyledFooter>
