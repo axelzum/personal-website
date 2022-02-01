@@ -10,29 +10,29 @@ const StyledBurger = styled.div`
   div {
     width: 50px;
     height: 3px;
-    background-color: ${({isOpen}) => (isOpen ? '#ccc' : '#333')};
+    background-color: ${({ isOpen }) => (isOpen ? '#ccc' : '#333')};
     border-radius: 10px;
     transform-origin: 1px;
     transition: all 0.3s ease;
 
     &:nth-child(1) {
-      transform: ${({isOpen}) => (isOpen ? 'rotate(45deg)' : 'rotate(0)')};
+      transform: ${({ isOpen }) => (isOpen ? 'rotate(45deg)' : 'rotate(0)')};
     }
 
     &:nth-child(2) {
-      transform: ${({isOpen}) => (isOpen ? 'translateX(100%)' : 'translateX(0)')};
-      opacity: ${({isOpen}) => (isOpen ? 0 : 1)};
+      transform: ${({ isOpen }) => (isOpen ? 'translateX(100%)' : 'translateX(0)')};
+      opacity: ${({ isOpen }) => (isOpen ? 0 : 1)};
     }
 
     &:nth-child(3) {
-      transform: ${({isOpen}) => (isOpen ? 'rotate(-45deg)' : 'rotate(0)')};
+      transform: ${({ isOpen }) => (isOpen ? 'rotate(-45deg)' : 'rotate(0)')};
     }
   }
 `;
 
 const StyledMainNav = styled.ul`
   list-style-type: none;
-  display: ${({isOpen}) => (isOpen ? 'block' : 'none')};
+  display: ${({ isOpen }) => (isOpen ? 'block' : 'none')};
   margin: 0;
   background: white;
   align-items: center;
@@ -67,7 +67,7 @@ const StyledMainNav = styled.ul`
     color: ${(props) => props.theme.colors.primary};
     font-size: 19px;
   }
-  
+
   a:hover {
     color: ${(props) => props.theme.colors.primary};
     font-size: 19px;
@@ -75,4 +75,4 @@ const StyledMainNav = styled.ul`
   }
 `;
 
-export {StyledBurger, StyledMainNav};
+export { StyledBurger, StyledMainNav };

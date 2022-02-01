@@ -1,6 +1,5 @@
-
 import IconLinks from './icon-links';
-import {StyledContactInfo, StyledCopyright, StyledFooter, StyledFooterInfoContainer} from './styles';
+import { StyledContactInfo, StyledCopyright, StyledFooter, StyledFooterInfoContainer } from './styles';
 
 const Footer = () => (
   <StyledFooter>
@@ -10,7 +9,7 @@ const Footer = () => (
         <p>{'319-389-8064'}</p>
       </StyledContactInfo>
       <StyledCopyright>{'Copyright © Axel Zumwalt 2021-2022'}</StyledCopyright>
-      <IconLinks/>
+      <IconLinks />
     </StyledFooterInfoContainer>
   </StyledFooter>
 );

@@ -9,7 +9,7 @@ const StyledHeader = styled.header`
   z-index: 1;
 
   @media screen and (min-width: 768px) {
-    box-shadow: 0px 0px 9px 3px rgba(41,41,41,.25);
+    box-shadow: 0px 0px 9px 3px rgba(41, 41, 41, 0.25);
   }
 
   box-shadow: ${({ isOpen }) => (isOpen ? '0' : '0px 0px 9px 3px rgba(41,41,41,.25)')};
@@ -34,7 +34,7 @@ const StyledNameContainer = styled.div`
 const StyledNav = styled.nav`
   max-width: 1400px;
   margin: auto;
-  
+
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
