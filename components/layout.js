@@ -4,8 +4,8 @@ import Header from './header/header';
 import Footer from './footer/footer';
 
 const StyledLayout = styled.div`
-  padding: 0 1rem;
-  margin: 100px auto auto;
+  width: 100%;
+  margin: 120px 0 0 0;
 `;
 
 const StyledFlexWrapper = styled.div`
