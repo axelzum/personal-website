@@ -1,19 +1,7 @@
-import Image from 'next/image';
-import styled from 'styled-components';
-
-import { StyledImageContainer, StyledParagraph } from '../styles';
-
-const StyledImage = styled(StyledImageContainer)`
-  max-width: 30vh;
-  min-width: 30vh;
-`;
+import { StyledParagraph } from '../styles';
 
 const Hyvee = () => (
   <StyledParagraph>
-    <StyledImage>
-      <Image height={234} layout='responsive' src='/images/logos/hyvee.jpg' width={620} />
-    </StyledImage>
-
     <h3>{'Work Overview'}</h3>
     <p>
       {'Hy-Vee is a midwest-based premium grocery store. As a digital software engineer, I help support and grow ' +

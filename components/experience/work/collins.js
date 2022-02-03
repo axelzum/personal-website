@@ -1,19 +1,7 @@
-import Image from 'next/image';
-import styled from 'styled-components';
-
-import { StyledImageContainer, StyledParagraph } from '../styles';
-
-const StyledImage = styled(StyledImageContainer)`
-  max-width: 50vh;
-  min-width: 50vh;
-`;
+import { StyledParagraph } from '../styles';
 
 const Collins = () => (
   <StyledParagraph>
-    <StyledImage>
-      <Image height={88} layout='responsive' src='/images/logos/collins.png' width={512} />
-    </StyledImage>
-
     <h3>{'Work Overview'}</h3>
     <p>
       {'I was a team member in the Test and Training Instrumentation (TTI) department of the Mission Systems business unit at Collins Aerospace. ' +

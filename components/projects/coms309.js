@@ -2,12 +2,7 @@ import styled from 'styled-components';
 import Image from 'next/image';
 
 const StyledParagraph = styled.div`
-  margin-top: 1vh;
-
-  p {
-    margin-bottom: 0;
-    margin-top: 1vh;
-  }
+  padding: 20px;
 
   a {
     text-decoration: underline;

@@ -1,9 +1,7 @@
 import styled from 'styled-components';
 
 const StyledParagraph = styled.div`
-  p {
-    margin-bottom: 0;
-  }
+  padding: 20px;
 
   a {
     text-decoration: underline;
@@ -12,8 +10,8 @@ const StyledParagraph = styled.div`
 
 const StyledItalics = styled.div`
   p {
-    margin-bottom: 0;
-    margin-top: 1vh;
+    margin-top: 0;
+    padding: 0 20px 0 20px;
     font-style: italic;
   }
 `;

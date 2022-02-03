@@ -2,61 +2,87 @@ import styled, { css } from 'styled-components';
 
 const StyledSection = styled.div`
   display: flex;
-  margin-top: 30px;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  border-bottom: 0.5px solid;
+  margin: 0 30px;
+
+  margin-top: 30px;
+  min-width: 300px;
+  max-height: 300px;
+
+  border: 2px solid ${(props) => props.theme.colors.primary};
+  border-radius: 7px 7px ${(props) => (props.isOpen ? '0' : '7px')} ${(props) => (props.isOpen ? '0' : '7px')};
+  border-bottom: ${(props) => (props.isOpen ? '0' : '')};
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    justify-content: space-between;
+    max-height: none;
+    align-items: center;
+  }
 
   &:hover {
     background: lightgray;
   }
 `;
 
-const StyledTextGrid = styled.div`
-  display: grid;
-  grid-template-columns: 50vw 20vw;
-  grid-column-gap: 1vw;
-  align-items: center;
+const StyledImageContainer = styled.div`
+  display: flex;
+  padding: 20px;
 `;
 
-const StyledSectionHeader = styled.p`
-  font-size: 3vh;
+const StyledTextContainer = styled.div`
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  text-align: right;
+  margin: 20px;
+
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
+`;
+
+const StyledSectionHeader = styled.h2`
   font-weight: bold;
   margin: 0;
 `;
 
-const StyledSectionSubheader = styled.p`
-  font-size: 2.3vh;
+const StyledSectionSubheader = styled.h3`
   font-style: italic;
   margin: 0;
 `;
 
-const StyledDate = styled.p`
-  font-size: 3vh;
-  font-weight: bolder;
-`;
+const StyledSectionDetail = styled.p``;
 
 const StyledDropdownArrow = styled.div`
-  //max-width: 5vh;
-  //max-height: 2.5vh;
-  width: 8vh;
-  height: 4vh;
-  margin-right: 1vw;
-  margin-left: auto;
+  min-width: 75px;
+  max-width: 75px;
+  margin: auto 10px;
 
   ${(props) =>
     props.isOpen
       ? css`
-          img {
-            transform: rotate(180deg);
+          svg {
+            transform: rotate(-180deg);
             transition: transform 0.3s ease;
           }
         `
       : css`
-          img {
+          svg {
             transform: rotate(0deg);
             transition: transform 0.3s ease;
           }
         `};
 `;
 
-export { StyledSection, StyledTextGrid, StyledSectionHeader, StyledSectionSubheader, StyledDate, StyledDropdownArrow };
+export {
+  StyledSection,
+  StyledImageContainer,
+  StyledTextContainer,
+  StyledSectionHeader,
+  StyledSectionSubheader,
+  StyledSectionDetail,
+  StyledDropdownArrow,
+};

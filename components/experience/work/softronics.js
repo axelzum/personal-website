@@ -1,19 +1,7 @@
-import styled from 'styled-components';
-import Image from 'next/image';
-
-import { StyledImageContainer, StyledParagraph } from '../styles';
-
-const StyledImage = styled(StyledImageContainer)`
-  max-width: 50vh;
-  min-width: 50vh;
-`;
+import { StyledParagraph } from '../styles';
 
 const Softronics = () => (
   <StyledParagraph>
-    <StyledImage>
-      <Image height={70} layout='responsive' src='/images/logos/softronics.jpg' width={400} />
-    </StyledImage>
-
     <h3>{'Work Overview'}</h3>
     <p>
       {'Softronics Ltd. is a small engineering firm specializing in high frequency radio technology. ' +
