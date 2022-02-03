@@ -2,7 +2,6 @@ import Head from 'next/head';
 import styled from 'styled-components';
 
 import SiteIntro from '../components/index/site-intro';
-import InfoCards from '../components/index/info-cards';
 import Resume from '../components/index/resume';
 import ContactInfo from '../components/index/contact-info';
 
@@ -51,7 +50,6 @@ const Home = () => (
 
     <StyledHomepageWrapper>
       <SiteIntro />
-      <InfoCards />
     </StyledHomepageWrapper>
 
     <StyledBlueBackground>

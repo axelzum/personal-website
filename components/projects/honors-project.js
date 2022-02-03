@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import Image from 'next/image';
 
 const StyledParagraph = styled.div`
   padding: 20px;
@@ -7,7 +6,6 @@ const StyledParagraph = styled.div`
 
 const HonorsProject = () => (
   <StyledParagraph>
-    <Image height={300} layout='fixed' src='/images/theremin.gif' width={500} />
     <p>
       {'To graduate with honors from Iowa State University students are expected to complete a final capstone project that ' +
         '"synthesizes your experience at Iowa State with a research project or creative work that is uniquely yours." ' +

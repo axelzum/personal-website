@@ -11,6 +11,9 @@ import MasterBusinessAdministration from '../components/experience/education/mba
 import HyveeImage from '../components/experience/images/hyvee-image';
 import CollinsImage from '../components/experience/images/collins-image';
 import SoftronicsImage from '../components/experience/images/softronics-image';
+import GerdinImage from '../components/experience/images/gerdin-image';
+import MarstonImage from '../components/experience/images/marston-image';
+import MarionImage from '../components/experience/images/marion-image';
 
 const Experience = () => (
   <>
@@ -52,14 +55,14 @@ const Experience = () => (
         collapse={<MasterBusinessAdministration />}
         detail='May 2022 • GPA: 3.82'
         header='Master of Business Administration'
-        image={<HyveeImage />}
+        image={<GerdinImage />}
         subheader='Debbie and Jerry Ivy College of Business'
       />
       <InfoSection
         collapse={<BachelorCprE />}
         detail='May 2022 • GPA: 3.80'
         header='Bachelor of Science in Computer Engineering'
-        image={<HyveeImage />}
+        image={<MarstonImage />}
         subheader='College of Engineering'
       />
       <StyledTitleBox>
@@ -69,7 +72,7 @@ const Experience = () => (
         collapse={<HighSchool />}
         detail='May 2017 • GPA: 4.11'
         header='High School Diploma'
-        image={<HyveeImage />}
+        image={<MarionImage />}
         subheader=''
       />
     </StyledInfoPageContainer>

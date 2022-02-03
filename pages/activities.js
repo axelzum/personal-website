@@ -4,6 +4,8 @@ import { StyledInfoPageContainer, StyledTitleBox } from '../styles/styles';
 import InfoSection from '../components/info-section/info-section';
 import Isucfvmb from '../components/activities/isucfvmb';
 import Honors from '../components/activities/honors';
+import BassImage from '../components/activities/images/bass-image';
+import FHPImage from '../components/activities/images/fhp-image';
 
 const Activities = () => (
   <>
@@ -21,14 +23,14 @@ const Activities = () => (
         collapse={<Isucfvmb />}
         detail='Fall 2018-Fall 2021'
         header='Cyclone Marching Band Varsity Drumline'
-        image=''
+        image={<BassImage />}
         subheader='Bass Drum Guide'
       />
       <InfoSection
         collapse={<Honors />}
         detail='Fall 2017-Present'
         header='Iowa State Honors Program'
-        image=''
+        image={<FHPImage />}
         subheader='Freshman Honors Program Leader and Ambassador'
       />
     </StyledInfoPageContainer>

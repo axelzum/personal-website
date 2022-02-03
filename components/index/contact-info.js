@@ -8,7 +8,7 @@ const StyledContactInfoContainer = styled.div`
   align-items: center;
 `;
 
-const StyledContactInfoCard = styled.div`
+const StyledContactInfoCard = styled.a`
   display: flex;
   flex-direction: row;
   border: 2px solid ${(props) => props.theme.colors.primary};
@@ -17,9 +17,13 @@ const StyledContactInfoCard = styled.div`
   align-items: center;
   margin: 10px;
 
+  &:hover {
+    background: lightgray;
+  }
+
   svg {
     color: ${(props) => props.theme.colors.primary};
-    padding-right: 10px;
+    padding: 5px;
     height: 40px;
   }
 
@@ -31,19 +35,19 @@ const StyledContactInfoCard = styled.div`
 const ContactInfo = () => (
   <StyledContactInfoContainer>
     <h1>{'Connect With Me'}</h1>
-    <StyledContactInfoCard>
+    <StyledContactInfoCard href='mailto: axelzum@gmail.com'>
       <EmailOutline />
       <p>{'axelzum@gmail.com'}</p>
     </StyledContactInfoCard>
-    <StyledContactInfoCard>
+    <StyledContactInfoCard href='tel: 319-389-8064'>
       <PhoneOutline />
       <p>{'319-389-8064'}</p>
     </StyledContactInfoCard>
-    <StyledContactInfoCard>
+    <StyledContactInfoCard href='https://linkedin.com/in/axel-zumwalt'>
       <LinkedinSquare />
       <p>{'linkedin.com/in/axel-zumwalt'}</p>
     </StyledContactInfoCard>
-    <StyledContactInfoCard>
+    <StyledContactInfoCard href='https://github.com/axelzum'>
       <Github />
       <p>{'github.com/axelzum'}</p>
     </StyledContactInfoCard>
