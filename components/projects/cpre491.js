@@ -1,18 +1,11 @@
 import styled from 'styled-components';
-import Image from 'next/image';
 
 const StyledParagraph = styled.div`
-  margin-top: 1vh;
-
-  p {
-    margin-bottom: 0;
-    margin-top: 1vh;
-  }
+  padding: 20px;
 `;
 
 const CprE491 = () => (
   <StyledParagraph>
-    <Image height={100} layout='fixed' src='/images/logos/buildertrend.png' width={500} />
     <p>
       {'I am currently working on my senior capstone design project with six other students in the Computer Engineering ' +
         'and Software Engineering programs at Iowa State University.'}

@@ -1,32 +1,38 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
+import { useDetectClickOutside } from 'react-detect-click-outside';
 
 import NavbarBurger from './navbar/navbar-burger';
 import Navbar from './navbar/navbar';
-import { ImageContainer, StyledHeader, StyledLogo, StyledNameContainer, StyledNav, StyledNavbarToggle } from './styles';
+import { StyledHeader, StyledLogoLink, StyledNameContainer, StyledNav, StyledNavbarToggle } from './styles';
 
 const Header = () => {
   const [open, setOpen] = useState(false);
   const handleToggle = () => setOpen(!open);
+  const handleNavbarClick = () => {
+    if (open) {
+      handleToggle();
+    }
+  };
+
+  const ref = useDetectClickOutside({ onTriggered: handleNavbarClick });
 
   return (
-    <StyledHeader>
-      <StyledNav>
+    <StyledHeader isOpen={open}>
+      <StyledNav ref={ref}>
         <Link href='/'>
-          <StyledLogo>
-            <ImageContainer>
-              <Image height={10} layout='responsive' src='/images/logos/icon.jpg' width={10} />
-            </ImageContainer>
+          <StyledLogoLink>
+            <Image height={80} layout='fixed' src='/images/logos/icon.jpg' width={80} />
             <StyledNameContainer>
               <h1>{'Axel'}</h1>
               <h1>{'Zumwalt'}</h1>
             </StyledNameContainer>
-          </StyledLogo>
+          </StyledLogoLink>
         </Link>
-        <Navbar open={open} />
+        <Navbar isOpen={open} linkClicked={handleNavbarClick} />
         <StyledNavbarToggle onClick={handleToggle}>
-          <NavbarBurger open={open} />
+          <NavbarBurger isOpen={open} />
         </StyledNavbarToggle>
       </StyledNav>
     </StyledHeader>

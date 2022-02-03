@@ -8,6 +8,12 @@ import { StyledInfoPageContainer, StyledTitleBox } from '../styles/styles';
 import HighSchool from '../components/experience/education/high-school';
 import BachelorCprE from '../components/experience/education/bs-cpre';
 import MasterBusinessAdministration from '../components/experience/education/mba';
+import HyveeImage from '../components/experience/images/hyvee-image';
+import CollinsImage from '../components/experience/images/collins-image';
+import SoftronicsImage from '../components/experience/images/softronics-image';
+import GerdinImage from '../components/experience/images/gerdin-image';
+import MarstonImage from '../components/experience/images/marston-image';
+import MarionImage from '../components/experience/images/marion-image';
 
 const Experience = () => (
   <>
@@ -22,20 +28,23 @@ const Experience = () => (
       </StyledTitleBox>
       <InfoSection
         collapse={<Hyvee />}
+        detail='May 2021–Present'
         header='Hy-Vee, Helpful Smiles Technology • Grimes, Iowa'
-        info='May 2021–Present'
+        image={<HyveeImage />}
         subheader='Software Engineering Intern, Aisles Online: Ecommerce Fulfillment'
       />
       <InfoSection
         collapse={<Collins />}
+        detail='May 2019–August 2020'
         header='Collins Aerospace, Mission Systems • Cedar Rapids, Iowa'
-        info='May 2019–August 2020'
+        image={<CollinsImage />}
         subheader='Software Engineering Intern, Test and Training Instrumentation'
       />
       <InfoSection
         collapse={<Softronics />}
+        detail='May 2016–August 2018'
         header='Softronics Ltd. • Marion, Iowa'
-        info='May 2016–August 2018'
+        image={<SoftronicsImage />}
         subheader='Intern'
       />
       <StyledTitleBox>
@@ -44,20 +53,28 @@ const Experience = () => (
       </StyledTitleBox>
       <InfoSection
         collapse={<MasterBusinessAdministration />}
+        detail='May 2022 • GPA: 3.82'
         header='Master of Business Administration'
-        info='May 2022 • GPA: 3.82'
+        image={<GerdinImage />}
         subheader='Debbie and Jerry Ivy College of Business'
       />
       <InfoSection
         collapse={<BachelorCprE />}
+        detail='May 2022 • GPA: 3.80'
         header='Bachelor of Science in Computer Engineering'
-        info='May 2022 • GPA: 3.80'
+        image={<MarstonImage />}
         subheader='College of Engineering'
       />
       <StyledTitleBox>
         <h2>{'Marion High School • Marion, Iowa'}</h2>
       </StyledTitleBox>
-      <InfoSection collapse={<HighSchool />} header='High School Diploma' info='May 2017 • GPA: 4.11' subheader='' />
+      <InfoSection
+        collapse={<HighSchool />}
+        detail='May 2017 • GPA: 4.11'
+        header='High School Diploma'
+        image={<MarionImage />}
+        subheader=''
+      />
     </StyledInfoPageContainer>
   </>
 );

@@ -1,12 +1,20 @@
-import Image from 'next/image';
 import styled from 'styled-components';
+import { LinkedinSquare, Github } from 'styled-icons/boxicons-logos';
 
 const StyledSocialContainer = styled.div`
-  padding-right: 2vw;
+  padding-right: 30px;
+  position: relative;
+  right: 0;
 `;
 
-const StyledLogo = styled.span`
-  margin-left: 0.5rem;
+const StyledLinkedInLogo = styled(LinkedinSquare)`
+  width: 40px;
+  margin-left: 5px;
+`;
+
+const StyledGithubLogo = styled(Github)`
+  width: 40px;
+  margin-left: 5px;
 `;
 
 const IconLinks = () => (
@@ -17,14 +25,10 @@ const IconLinks = () => (
       target='_blank'
       title='https://www.linkedin.com/in/axel-zumwalt'
     >
-      <StyledLogo>
-        <Image alt='LinkedIn Logo' height={30} src='/images/logos/linkedin.png' width={30} />
-      </StyledLogo>
+      <StyledLinkedInLogo />
     </a>
     <a href='https://github.com/axelzum' rel='noopener noreferrer' target='_blank' title='https://github.com/axelzum'>
-      <StyledLogo>
-        <Image alt='GitHub Logo' height={30} src='/images/logos/github.png' width={30} />
-      </StyledLogo>
+      <StyledGithubLogo />
     </a>
   </StyledSocialContainer>
 );

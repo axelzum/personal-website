@@ -1,33 +1,40 @@
 import styled from 'styled-components';
 
 const StyledHeader = styled.header`
-  max-width: 100%;
-  border-bottom: 1px solid;
   position: fixed;
   top: 0;
   width: 100%;
+  height: 80px;
   background: white;
   z-index: 1;
-  max-height: 10vh;
+
+  @media screen and (min-width: 768px) {
+    box-shadow: 0px 0px 9px 3px rgba(41, 41, 41, 0.25);
+  }
+
+  box-shadow: ${({ isOpen }) => (isOpen ? '0' : '0px 0px 9px 3px rgba(41,41,41,.25)')};
+  -webkit-box-shadow: ${({ isOpen }) => (isOpen ? '0' : '0px 0px 9px 3px rgba(41,41,41,.25)')};
+  -moz-box-shadow: ${({ isOpen }) => (isOpen ? '0' : '0px 0px 9px 3px rgba(41,41,41,.25)')};
 `;
 
 const StyledNameContainer = styled.div`
-  padding-left: 2vh;
+  padding-left: 10px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 
   h1 {
-    font-size: 3.7vh;
     margin: 0;
     color: ${(props) => props.theme.colors.primary};
   }
 `;
 
-const ImageContainer = styled.div`
-  max-width: 10vh;
-  min-width: 10vh;
-  width: 100%;
-`;
-
 const StyledNav = styled.nav`
+  max-width: 1400px;
+  margin: auto;
+
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
@@ -38,8 +45,10 @@ const StyledNav = styled.nav`
 
 const StyledNavbarToggle = styled.div`
   position: absolute;
-  top: 2.5vh;
-  right: 2vw;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 30px;
   cursor: pointer;
 
   @media screen and (min-width: 768px) {
@@ -47,9 +56,8 @@ const StyledNavbarToggle = styled.div`
   }
 `;
 
-const StyledLogo = styled.a`
+const StyledLogoLink = styled.a`
   cursor: pointer;
-  flex-shrink: 0;
 
   div {
     display: inline-block;
@@ -57,4 +65,4 @@ const StyledLogo = styled.a`
   }
 `;
 
-export { ImageContainer, StyledHeader, StyledNameContainer, StyledNav, StyledNavbarToggle, StyledLogo };
+export { StyledHeader, StyledNameContainer, StyledNav, StyledNavbarToggle, StyledLogoLink };

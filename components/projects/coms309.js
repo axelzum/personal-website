@@ -1,13 +1,7 @@
 import styled from 'styled-components';
-import Image from 'next/image';
 
 const StyledParagraph = styled.div`
-  margin-top: 1vh;
-
-  p {
-    margin-bottom: 0;
-    margin-top: 1vh;
-  }
+  padding: 20px;
 
   a {
     text-decoration: underline;
@@ -16,7 +10,6 @@ const StyledParagraph = styled.div`
 
 const ComS309 = () => (
   <StyledParagraph>
-    <Image height={300} layout='fixed' src='/images/309.png' width={500} />
     <p>
       {'For this project I worked with three other classmates to ideate, design, and develop a mobile phone application ' +
         'to learn about the software development process.'}

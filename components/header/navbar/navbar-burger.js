@@ -1,7 +1,7 @@
 import { StyledBurger } from './styles';
 
-const NavbarBurger = ({ open }) => (
-  <StyledBurger open={open}>
+const NavbarBurger = ({ isOpen }) => (
+  <StyledBurger isOpen={isOpen}>
     <div />
     <div />
     <div />

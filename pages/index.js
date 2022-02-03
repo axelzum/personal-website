@@ -1,94 +1,64 @@
 import Head from 'next/head';
-import Image from 'next/image';
 import styled from 'styled-components';
 
-const StyledPageContainer = styled.div`
-  width: 90vw;
-  margin: 30px auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-  @media screen and (max-width: 1000px) {
-    flex-direction: column;
-  }
-`;
-
-const StyledSection = styled.div`
-  p {
-    width: 265px;
-    margin: auto;
-    flex-shrink: 0;
-    text-align: center;
-    padding-bottom: 5vh;
-  }
-`;
-
-const StyledImageContainer = styled.div`
-  width: 265px;
-  height: 350px;
-  border: 2px solid ${(props) => props.theme.colors.primary};
-  margin: 0 auto;
-  flex-shrink: 0;
-`;
-
-const StyledTextContainer = styled.div`
-  text-align: center;
-  padding: 0 2vw 0;
-`;
+import SiteIntro from '../components/index/site-intro';
+import Resume from '../components/index/resume';
+import ContactInfo from '../components/index/contact-info';
 
 const StyledTitle = styled.div`
+  width: 100%;
   text-align: center;
-  color: ${(props) => props.theme.colors.primary};
+  background: ${(props) => props.theme.colors.primary};
+  color: white;
+  min-height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h1 {
+    margin: 0;
+    padding: 0 30px;
+    font-size: 40px;
+  }
+`;
+
+const StyledHomepageWrapper = styled.div`
+  max-width: 1400px;
+  display: block;
+  flex-shrink: 0;
+  justify-content: center;
+  margin: auto;
+`;
+
+const StyledBlueBackground = styled.div`
+  background: ${(props) => props.theme.colors.primary};
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
 `;
 
 const Home = () => (
   <>
     <Head>
-      <title>{'Axel Zumwalt'}</title>
-      <meta content='Personal resume website' name='description' />
+      <title>{'Axel Zumwalt - Career Portfolio'}</title>
     </Head>
 
     <StyledTitle>
-      <h1>{"Axel Zumwalt's Portolio Website"}</h1>
+      <h1>{"Hello, I'm Axel Zumwalt. Welcome to My Website."}</h1>
     </StyledTitle>
-    <StyledPageContainer>
-      <StyledSection>
-        <StyledImageContainer>
-          <Image height={350} layout='fixed' src='/images/portrait.jpeg' width={265} />
-        </StyledImageContainer>
-      </StyledSection>
-      <StyledTextContainer>
-        <h3>
-          {
-            'I am a student at Iowa State University graduating in May of 2022 with a Bachelor of Science in Computer Engineering and a Master of Business Administration.'
-          }
-        </h3>
-        <h3>
-          {
-            'I am a skilled computer software developer with industry experience in ecommerce web-design and object oriented application development'
-          }
-        </h3>
-        <h3>
-          {
-            'My future career objective is build on my existing experiences in project planning, execution, and leadership to become a product manager and lead the design, execution, and delivery of impactful ideas.'
-          }
-        </h3>
-      </StyledTextContainer>
-      <StyledSection>
-        <StyledImageContainer>
-          <a
-            href='/files/Zumwalt_Axel Resume.pdf'
-            rel='noopener noreferrer'
-            target='_blank'
-            title="Axel Zumwalt's Resume"
-          >
-            <Image height={350} layout='fixed' src='/images/resume-photo.png' width={265} />
-          </a>
-        </StyledImageContainer>
-        <p>{"Click to View Axel's Resume"}</p>
-      </StyledSection>
-    </StyledPageContainer>
+
+    <StyledHomepageWrapper>
+      <SiteIntro />
+    </StyledHomepageWrapper>
+
+    <StyledBlueBackground>
+      <Resume />
+    </StyledBlueBackground>
+
+    <StyledHomepageWrapper>
+      <ContactInfo />
+    </StyledHomepageWrapper>
   </>
 );
 

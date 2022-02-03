@@ -1,33 +1,33 @@
 import { useState } from 'react';
+import { ChevronDown } from 'styled-icons/bootstrap';
 
-import DropdownArrow from '../dropdown-arrow';
 import Collapse from '../collapse';
 
 import {
-  StyledDate,
   StyledDropdownArrow,
+  StyledImageContainer,
   StyledSection,
+  StyledSectionDetail,
   StyledSectionHeader,
   StyledSectionSubheader,
-  StyledTextGrid,
+  StyledTextContainer,
 } from './styles';
 
-const InfoSection = ({ header, subheader, info, collapse }) => {
+const InfoSection = ({ collapse, detail, header, image, subheader }) => {
   const [show, setShow] = useState(false);
   const handleToggle = () => setShow(!show);
 
   return (
     <>
-      <StyledSection onClick={handleToggle}>
-        <StyledTextGrid>
-          <div>
-            <StyledSectionHeader>{header}</StyledSectionHeader>
-            <StyledSectionSubheader>{subheader}</StyledSectionSubheader>
-          </div>
-          <StyledDate>{info}</StyledDate>
-        </StyledTextGrid>
+      <StyledSection isOpen={show} onClick={handleToggle}>
+        <StyledImageContainer>{image}</StyledImageContainer>
+        <StyledTextContainer>
+          <StyledSectionHeader>{header}</StyledSectionHeader>
+          <StyledSectionSubheader>{subheader}</StyledSectionSubheader>
+          <StyledSectionDetail>{detail}</StyledSectionDetail>
+        </StyledTextContainer>
         <StyledDropdownArrow isOpen={show}>
-          <DropdownArrow />
+          <ChevronDown />
         </StyledDropdownArrow>
       </StyledSection>
       <Collapse isOpen={show}>{collapse}</Collapse>
