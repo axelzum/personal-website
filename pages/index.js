@@ -45,7 +45,7 @@ const Home = () => (
     </Head>
 
     <StyledTitle>
-      <h1>{"Hello, I'm Axel Zumwalt. Welcome to My Website."}</h1>
+      <h1>{"Hello, I'm Axel Zumwalt."}</h1>
     </StyledTitle>
 
     <StyledHomepageWrapper>

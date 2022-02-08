@@ -40,12 +40,12 @@ const SiteIntro = () => (
     <StyledIntroTextContainer>
       <h2>
         {'I am a student at Iowa State University graduating in May of 2022 with a Bachelor of Science in Computer Engineering and a Master of Business Administration. ' +
-          'As a skilled computer software developer, I have industry experience in e-commerce web design with react and object oriented application development in Java. ' +
-          'In my free time I like to play percussion and the piano, discover new recipes, and play board games.'}
+          'As a skilled computer software developer, I have industry experience in e-commerce web design with React and object-oriented application development in Java. ' +
+          'In my free time, I like to play percussion and piano, discover new recipes, and enjoy board games.'}
       </h2>
       <h2>
         {
-          'I hope to support your digital endeavor as an organized problem solver, proficient in communication, leadership, and execution.'
+          'I hope to support your digital endeavor as an organized problem solver proficient in communication, leadership, and execution.'
         }
       </h2>
     </StyledIntroTextContainer>

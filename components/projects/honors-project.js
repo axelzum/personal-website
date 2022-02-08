@@ -7,15 +7,15 @@ const StyledParagraph = styled.div`
 const HonorsProject = () => (
   <StyledParagraph>
     <p>
-      {'To graduate with honors from Iowa State University students are expected to complete a final capstone project that ' +
+      {'To graduate with honors from Iowa State University, students are expected to complete a final capstone project that ' +
         '"synthesizes your experience at Iowa State with a research project or creative work that is uniquely yours." ' +
-        'These do not have to be related to any particular field of study but must showcase a students willingness ' +
+        'It does not have to be related to any particular field of study but it must showcase a students willingness ' +
         'to go above and beyond to learn something new.'}
     </p>
     <p>
-      {'While studying Computer Engineering I focused my area of study around software development so I want to make ' +
-        'my project around a different area of study so I can learn new skills and explore a different area of problem solving. ' +
-        'Because of my love of music I decided to build a Theremin which is an electrical musical instrument.'}
+      {'While studying Computer Engineering, I focused my area of study around software development. Because of this, I wanted to focus ' +
+        'my project around a different area of study so I can learn new skills and problem solving techniques. ' +
+        'Because of my love of music, I decided to build a Theremin which is an electrical musical instrument.'}
     </p>
     <p>
       {'Building this Theremin will require a good amount of research and relearning of electrical engineering topics ' +
