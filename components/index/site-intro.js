@@ -35,7 +35,7 @@ const StyledIntroTextContainer = styled.div`
 const SiteIntro = () => (
   <StyledIntro>
     <StyledIntroPhotoContainer>
-      <Image height={1000} layout='intrinsic' src='/images/portrait.jpeg' width={1167} />
+      <Image height={3758} layout='intrinsic' src='/images/portrait2.JPG' width={4506} />
     </StyledIntroPhotoContainer>
     <StyledIntroTextContainer>
       <h2>
