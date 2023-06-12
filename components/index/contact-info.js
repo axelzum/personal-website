@@ -12,7 +12,7 @@ const StyledContactInfoCard = styled.a`
   display: flex;
   flex-direction: row;
   border: 2px solid ${(props) => props.theme.colors.primary};
-  border-radius: 7px;
+  border-radius: 10px;
   min-width: 300px;
   align-items: center;
   margin: 10px;

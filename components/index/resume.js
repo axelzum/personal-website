@@ -21,8 +21,8 @@ const StyledResumePhotoContainer = styled.div`
   flex: 1;
   min-width: 300px;
   max-width: 400px;
-  border: 3px solid white;
-  border-radius: 7px;
+  overflow: hidden;
+  border-radius: 10px;
   margin: 30px 20px;
 `;
 

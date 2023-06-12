@@ -9,6 +9,7 @@ const StyledFooter = styled.footer`
 
 const StyledFooterInfoContainer = styled.div`
   max-width: 1400px;
+  padding: 10px;
   margin: auto;
   display: flex;
   align-items: center;
@@ -25,8 +26,4 @@ const StyledContactInfo = styled.div`
   }
 `;
 
-const StyledCopyright = styled.p`
-  padding: 10px;
-`;
-
-export { StyledFooter, StyledFooterInfoContainer, StyledContactInfo, StyledCopyright };
+export { StyledFooter, StyledFooterInfoContainer, StyledContactInfo };
