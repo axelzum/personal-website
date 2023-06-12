@@ -8,7 +8,7 @@ import ContactInfo from '../components/index/contact-info';
 const StyledTitle = styled.div`
   width: 100%;
   text-align: center;
-  background: ${(props) => props.theme.colors.primary};
+  background: ${(props) => props.theme.colors.primaryLight};
   color: white;
   min-height: 80px;
   display: flex;
@@ -31,7 +31,7 @@ const StyledHomepageWrapper = styled.div`
 `;
 
 const StyledBlueBackground = styled.div`
-  background: ${(props) => props.theme.colors.primary};
+  background: ${(props) => props.theme.colors.primaryLight};
   width: 100%;
   display: flex;
   justify-content: center;

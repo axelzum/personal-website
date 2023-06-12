@@ -39,7 +39,7 @@ const SiteIntro = () => (
     </StyledIntroPhotoContainer>
     <StyledIntroTextContainer>
       <h2>
-        {'I am an accomplished Software Engineer with over 4 years of experience creating successful solutions. '}
+        {'I am an accomplished Software Engineer with over 4 years of industry experience creating successful solutions. '}
       </h2>
       <h2>
         {'My diverse portfolio of expertise across multiple industries includes an advanced understanding of the ReactJS Framework and corresponding testing patterns. ' +
