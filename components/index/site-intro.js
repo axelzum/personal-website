@@ -20,8 +20,8 @@ const StyledIntroPhotoContainer = styled.div`
   flex: 1;
   min-width: 300px;
   max-width: 600px;
-  border: 3px solid ${(props) => props.theme.colors.primary};
-  border-radius: 7px;
+  border-radius: 10px;
+  overflow: hidden;
   margin: auto 20px;
 `;
 
@@ -39,13 +39,15 @@ const SiteIntro = () => (
     </StyledIntroPhotoContainer>
     <StyledIntroTextContainer>
       <h2>
-        {'I am a student at Iowa State University graduating in May of 2022 with a Bachelor of Science in Computer Engineering and a Master of Business Administration. ' +
-          'As a skilled computer software developer, I have industry experience in e-commerce web design with React and object-oriented application development in Java. ' +
-          'In my free time, I like to play percussion and piano, discover new recipes, and enjoy board games.'}
+        {'I am an accomplished Software Engineer with over 4 years of experience creating successful solutions. '}
+      </h2>
+      <h2>
+        {'My diverse portfolio of expertise across multiple industries includes an advanced understanding of the ReactJS Framework and corresponding testing patterns. ' +
+          'I am passionate about identifying business opportunities for improvement and influencing co-contributors to achieve their best work.'}
       </h2>
       <h2>
         {
-          'I hope to support your digital endeavor as an organized problem solver proficient in communication, leadership, and execution.'
+          'I hope to support your digital endeavor as an organized problem-solver proficient in communication, leadership, and execution.'
         }
       </h2>
     </StyledIntroTextContainer>
