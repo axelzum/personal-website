@@ -36,10 +36,12 @@ const StyledMainNav = styled.ul`
   margin: 0;
   background: white;
   align-items: center;
+  font-weight: bold;
+  font-size: large;
 
-  box-shadow: 0px 5px 5px 0px rgba(41, 41, 41, 0.25);
-  -webkit-box-shadow: 0px 5px 5px 0px rgba(41, 41, 41, 0.25);
-  -moz-box-shadow: 0px 5px 5px 0px rgba(41, 41, 41, 0.25);
+  box-shadow: 0 5px 5px 0 rgba(41, 41, 41, 0.25);
+  -webkit-box-shadow: 0 5px 5px 0 rgba(41, 41, 41, 0.25);
+  -moz-box-shadow: 0 5px 5px 0 rgba(41, 41, 41, 0.25);
 
   li {
     padding: 15px;
@@ -53,9 +55,9 @@ const StyledMainNav = styled.ul`
     justify-content: flex-end;
     background: transparent;
 
-    box-shadow: 0px 0px;
-    -webkit-box-shadow: 0px 0px;
-    -moz-box-shadow: 0px 0px;
+    box-shadow: 0 0;
+    -webkit-box-shadow: 0 0;
+    -moz-box-shadow: 0 0;
 
     li {
       margin: 0;
@@ -65,13 +67,27 @@ const StyledMainNav = styled.ul`
 
   .active {
     color: ${(props) => props.theme.colors.primary};
-    font-size: 19px;
+    text-decoration-color: ${(props) => props.theme.colors.primary};
+    text-decoration-line: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 3px;
   }
 
+  a {
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    text-decoration-thickness: 0;
+    text-underline-offset: 0;
+    transition: text-decoration-color 0.3s ease, text-underline-offset 0.3s ease;
+  }
+  
   a:hover {
     color: ${(props) => props.theme.colors.primary};
-    font-size: 19px;
-    transition: 0.2s ease;
+    text-decoration-color: ${(props) => props.theme.colors.primary};
+    text-decoration-line: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 8px;
+    transition: 0.3s ease;
   }
 `;
 
