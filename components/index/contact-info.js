@@ -35,19 +35,19 @@ const StyledContactInfoCard = styled.a`
 const ContactInfo = () => (
   <StyledContactInfoContainer>
     <h1>{'Connect With Me'}</h1>
-    <StyledContactInfoCard href='mailto: axelzum@gmail.com'>
+    <StyledContactInfoCard href='mailto: axelzum@gmail.com' rel='noopener noreferrer' target='_blank'>
       <EmailOutline />
       <p>{'axelzum@gmail.com'}</p>
     </StyledContactInfoCard>
-    <StyledContactInfoCard href='tel: 319-389-8064'>
+    <StyledContactInfoCard href='tel: 319-389-8064' rel='noopener noreferrer' target='_blank'>
       <PhoneOutline />
       <p>{'319-389-8064'}</p>
     </StyledContactInfoCard>
-    <StyledContactInfoCard href='https://linkedin.com/in/axel-zumwalt'>
+    <StyledContactInfoCard href='https://linkedin.com/in/axel-zumwalt' rel='noopener noreferrer' target='_blank'>
       <LinkedinSquare />
       <p>{'linkedin.com/in/axel-zumwalt'}</p>
     </StyledContactInfoCard>
-    <StyledContactInfoCard href='https://github.com/axelzum'>
+    <StyledContactInfoCard href='https://github.com/axelzum' rel='noopener noreferrer' target='_blank'>
       <Github />
       <p>{'github.com/axelzum'}</p>
     </StyledContactInfoCard>

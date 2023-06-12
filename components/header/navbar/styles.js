@@ -1,26 +1,25 @@
 import styled from 'styled-components';
 
 const StyledBurger = styled.div`
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
   display: flex;
   justify-content: space-around;
   flex-flow: column nowrap;
 
   div {
-    width: 50px;
+    width: 35px;
     height: 3px;
     background-color: ${({ isOpen }) => (isOpen ? '#ccc' : '#333')};
     border-radius: 10px;
     transform-origin: 1px;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
 
     &:nth-child(1) {
       transform: ${({ isOpen }) => (isOpen ? 'rotate(45deg)' : 'rotate(0)')};
     }
 
     &:nth-child(2) {
-      transform: ${({ isOpen }) => (isOpen ? 'translateX(100%)' : 'translateX(0)')};
       opacity: ${({ isOpen }) => (isOpen ? 0 : 1)};
     }
 
@@ -33,7 +32,7 @@ const StyledBurger = styled.div`
 const StyledMainNav = styled.ul`
   list-style-type: none;
   display: ${({ isOpen }) => (isOpen ? 'block' : 'none')};
-  margin: 0;
+  margin: -4px;
   background: white;
   align-items: center;
   font-weight: bold;
