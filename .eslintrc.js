@@ -7,6 +7,7 @@ module.exports = {
     'jsx-a11y/anchor-is-valid': 'off',
     'jsx-quotes': [2, 'prefer-single'],
     quotes: [2, 'single', { avoidEscape: true }],
+    'react/jsx-filename-extension': 'off',
     'react/react-in-jsx-scope': 'off',
   },
 };
