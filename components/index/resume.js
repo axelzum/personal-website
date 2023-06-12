@@ -7,7 +7,6 @@ const StyledResume = styled.a`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   margin: 20px auto;
 
   @media screen and (min-width: 950px) {
@@ -27,10 +26,7 @@ const StyledResumePhotoContainer = styled.div`
 `;
 
 const StyledResumeTextContainer = styled.div`
-  display: block;
-  flex: 1;
   max-width: 400px;
-  margin: auto 20px;
   color: white;
   text-align: center;
 `;
