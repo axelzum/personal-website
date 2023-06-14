@@ -35,3 +35,7 @@ yarn-error.log*
 
 # intellij
 .idea
+
+# yarn
+.yarn
+.yarnrc.yml

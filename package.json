@@ -27,5 +27,6 @@
     "eslint-config-next": "13.4.5",
     "prettier": "2.8.8",
     "prettier-config-get-off-my-lawn": "1.0.0"
-  }
+  },
+  "packageManager": "yarn@1.22.19"
 }
