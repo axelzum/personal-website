@@ -31,12 +31,9 @@ const StyledBurger = styled.div`
 
 const StyledMainNav = styled.ul`
   list-style-type: none;
-  display: ${({ isOpen }) => (isOpen ? 'block' : 'none')};
-  margin: -4px;
+  display: ${({isOpen}) => (isOpen ? 'block' : 'none')};
   background: white;
   align-items: center;
-  font-weight: bold;
-  font-size: large;
 
   box-shadow: 0 5px 5px 0 rgba(41, 41, 41, 0.25);
   -webkit-box-shadow: 0 5px 5px 0 rgba(41, 41, 41, 0.25);
@@ -66,27 +63,18 @@ const StyledMainNav = styled.ul`
 
   .active {
     color: ${(props) => props.theme.colors.primary};
-    text-decoration-color: ${(props) => props.theme.colors.primary};
     text-decoration-line: underline;
     text-decoration-thickness: 3px;
-    text-underline-offset: 3px;
+    //text-underline-offset: 4px;
   }
 
   a {
-    text-decoration: underline;
-    text-decoration-color: transparent;
-    text-decoration-thickness: 0;
-    text-underline-offset: 0;
-    transition: text-decoration-color 0.3s ease, text-underline-offset 0.3s ease;
+    font-weight: bold;
   }
   
   a:hover {
     color: ${(props) => props.theme.colors.primary};
-    text-decoration-color: ${(props) => props.theme.colors.primary};
-    text-decoration-line: underline;
-    text-decoration-thickness: 3px;
-    text-underline-offset: 8px;
-    transition: 0.3s ease;
+    transition: 0.2s ease;
   }
 `;
 

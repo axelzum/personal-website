@@ -11,14 +11,14 @@ const Navbar = ({ isOpen, linkClicked }) => {
       {/* eslint-disable jsx-a11y/click-events-have-key-events,jsx-a11y/no-static-element-interactions */}
       <li>
         <Link href='/'>
-          <a className={router.pathname === '/' ? 'active' : 'no'} onClick={linkClicked}>
+          <a className={router.pathname === '/' ? 'active' : ''} onClick={linkClicked}>
             {'Home'}
           </a>
         </Link>
       </li>
       <li>
         <Link href='/experience'>
-          <a className={router.pathname === '/experience' ? 'active' : 'no'} onClick={linkClicked}>
+          <a className={router.pathname === '/experience' ? 'active' : ''} onClick={linkClicked}>
             {'Experience'}
           </a>
         </Link>

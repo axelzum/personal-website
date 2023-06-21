@@ -1,9 +1,11 @@
 import Head from 'next/head';
 import styled from 'styled-components';
+import {TypeAnimation} from 'react-type-animation';
 
 import SiteIntro from '../components/index/site-intro';
 import Resume from '../components/index/resume';
 import ContactInfo from '../components/index/contact-info';
+
 
 const StyledTitle = styled.div`
   width: 100%;
@@ -45,7 +47,20 @@ const Home = () => (
     </Head>
 
     <StyledTitle>
-      <h1>{'Hello, I am Axel Zumwalt.'}</h1>
+        <TypeAnimation
+            sequence={[
+                'Developer',
+                500,
+                'Developer • Designer',
+                500,
+                'Developer • Designer • Teacher',
+                500,
+                'Developer • Designer • Teacher • Performer',
+                500,
+            ]}
+            speed={50}
+            wrapper='h1'
+        />
     </StyledTitle>
 
     <StyledHomepageWrapper>
