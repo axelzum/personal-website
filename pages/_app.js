@@ -32,7 +32,7 @@ const AppLayout = ({ Component, pageProps }) => (
         <link rel='icon' type='image/png' sizes='16x16' href='/favicons/favicon-16x16.png' />
         <link rel='manifest' href='/favicons/site.webmanifest' />
         <link rel='mask-icon' href='/favicons/safari-pinned-tab.svg' color='#223286' />
-        <link rel='shortcut icon' href='/favicons/favicon.ico' />
+        <link rel='icon' href='/favicons/favicon.ico' />
         <meta name='msapplication-TileColor' content='#223286' />
         <meta name='msapplication-config' content='/favicons/browserconfig.xml' />
         <meta name='theme-color' content='#223286' />
