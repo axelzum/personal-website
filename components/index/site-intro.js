@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import styled from 'styled-components';
 
+import InfoCards from './info-cards';
+
 const StyledIntro = styled.div`
   width: 100%;
   min-height: 600px;
@@ -33,25 +35,28 @@ const StyledIntroTextContainer = styled.div`
 `;
 
 const SiteIntro = () => (
-  <StyledIntro>
-    <StyledIntroPhotoContainer>
-      <Image height={3758} layout='intrinsic' src='/images/portrait2.JPG' width={4506} />
-    </StyledIntroPhotoContainer>
-    <StyledIntroTextContainer>
-      <h2>
-        {'I am an accomplished Software Engineer with over 4 years of industry experience creating successful solutions. '}
-      </h2>
-      <h2>
-        {'My diverse portfolio of expertise across multiple industries includes an advanced understanding of the ReactJS Framework and corresponding testing patterns. ' +
-          'I am passionate about identifying business opportunities for improvement and influencing co-contributors to achieve their best work.'}
-      </h2>
-      <h2>
-        {
-          'I hope to support your digital endeavor as an organized problem-solver proficient in communication, leadership, and execution.'
-        }
-      </h2>
-    </StyledIntroTextContainer>
-  </StyledIntro>
+  <>
+    <StyledIntro>
+      <StyledIntroPhotoContainer>
+        <Image height={4069} layout='intrinsic' priority src='/images/portrait.jpeg' width={4747}/>
+      </StyledIntroPhotoContainer>
+      <StyledIntroTextContainer>
+        <h2>
+          {'I am an accomplished Software Engineer with over 4 years of industry experience creating successful solutions. '}
+        </h2>
+        <h2>
+          {'My diverse portfolio of expertise across multiple industries includes an advanced understanding of the ReactJS Framework and corresponding testing patterns. ' +
+            'I am passionate about identifying business opportunities for improvement and influencing co-contributors to achieve their best work.'}
+        </h2>
+        <h2>
+          {
+            'I hope to support your digital endeavor as an organized problem-solver proficient in communication, leadership, and execution.'
+          }
+        </h2>
+      </StyledIntroTextContainer>
+    </StyledIntro>
+    <InfoCards/>
+  </>
 );
 
 export default SiteIntro;

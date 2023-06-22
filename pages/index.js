@@ -72,7 +72,7 @@ const Home = () => (
     </StyledBlueBackground>
 
     <StyledHomepageWrapper>
-      <ContactInfo />
+      <ContactInfo/>
     </StyledHomepageWrapper>
   </>
 );
