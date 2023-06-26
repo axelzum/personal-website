@@ -4,8 +4,8 @@ const Hyvee = () => (
   <StyledParagraph>
     <h3>{'Work Overview'}</h3>
     <p>
-      {'Hy-Vee is a midwest-based premium grocery store. As a digital software engineer, I help support and grow ' +
-        "Hy-Vee's competency in online grocery ordering and fulfillment. I work on the Aisles Online Ecommerce Fulfillment team " +
+      {'Hy-Vee is a midwest-based premium grocery store. As a digital software engineer, I helped support and grow ' +
+        "Hy-Vee's competency in online grocery ordering and fulfillment. I worked on the Aisles Online Ecommerce Fulfillment team " +
         'supporting the customer and employee experiences around online ordering.'}
     </p>
 

@@ -4,10 +4,6 @@ import styled from 'styled-components';
 
 const StyledAnimateHeight = styled(AnimateHeight)`
   transition: height 0.2s ease, opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
-  border: 2px solid ${(props) => props.theme.colors.primary};
-  border-radius: ${(props) => (props.isOpen ? '0' : '7px')} ${(props) => (props.isOpen ? '0' : '7px')} 7px 7px;
-  border: ${(props) => (props.isOpen ? '' : '0')};
-  border-top: ${(props) => (props.isOpen ? '0' : '')};
 
   min-width: 300px;
   margin: 0 30px;
