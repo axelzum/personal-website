@@ -24,13 +24,6 @@ const Navbar = ({ isOpen, linkClicked }) => {
         </Link>
       </li>
       <li>
-        <Link href='/projects'>
-          <a className={router.pathname === '/projects' ? 'active' : ''} onClick={linkClicked}>
-            {'Projects'}
-          </a>
-        </Link>
-      </li>
-      <li>
         <Link href='/activities'>
           <a className={router.pathname === '/activities' ? 'active' : ''} onClick={linkClicked}>
             {'Activities and Interests'}
