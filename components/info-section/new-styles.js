@@ -5,7 +5,6 @@ const StyledSection = styled.div`
   flex-direction: column;
   margin: 30px 30px;
   align-items: center;
-  //margin-bottom: 20px;
 `;
 
 const StyledSectionCard = styled.div`
@@ -13,7 +12,8 @@ const StyledSectionCard = styled.div`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid ${(props) => props.theme.colors.primary};
+  border-bottom: 3px solid ${(props) => props.theme.colors.primary};
+  width: 100%;
 
 
   @media screen and (max-width: 768px) {
@@ -50,7 +50,11 @@ const StyledSectionDate = styled.h4`
   margin: 0;
 `;
 
-const StyledSectionDetail = styled.p``;
+const StyledSectionDetail = styled.p`
+  @media screen and (max-width: 768px) {
+    text-align: left;
+  }
+`;
 
 const StyledReadMoreButton = styled.div`
   cursor: pointer;

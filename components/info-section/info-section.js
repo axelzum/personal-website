@@ -19,18 +19,18 @@ const InfoSection = ({ collapse, detail, header, image, subheader }) => {
 
   return (
     <>
-      <StyledSection isOpen={show} onClick={handleToggle}>
+      <StyledSection isopen={show} onClick={handleToggle}>
         <StyledImageContainer>{image}</StyledImageContainer>
         <StyledTextContainer>
           <StyledSectionHeader>{header}</StyledSectionHeader>
           <StyledSectionSubheader>{subheader}</StyledSectionSubheader>
           <StyledSectionDetail>{detail}</StyledSectionDetail>
         </StyledTextContainer>
-        <StyledDropdownArrow isOpen={show}>
+        <StyledDropdownArrow isopen={show}>
           <ChevronDown />
         </StyledDropdownArrow>
       </StyledSection>
-      <Collapse isOpen={show}>{collapse}</Collapse>
+      <Collapse isopen={show}>{collapse}</Collapse>
     </>
   );
 };

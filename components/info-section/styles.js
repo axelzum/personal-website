@@ -12,8 +12,8 @@ const StyledSection = styled.div`
   max-height: 300px;
 
   border: 2px solid ${(props) => props.theme.colors.primary};
-  border-radius: 7px 7px ${(props) => (props.isOpen ? '0' : '7px')} ${(props) => (props.isOpen ? '0' : '7px')};
-  border-bottom: ${(props) => (props.isOpen ? '0' : '')};
+  border-radius: 7px 7px ${(props) => (props.isopen ? '0' : '7px')} ${(props) => (props.isopen ? '0' : '7px')};
+  border-bottom: ${(props) => (props.isopen ? '0' : '')};
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
@@ -62,7 +62,7 @@ const StyledDropdownArrow = styled.div`
   margin: auto 10px;
 
   ${(props) =>
-    props.isOpen
+    props.isopen
       ? css`
           svg {
             transform: rotate(-180deg);

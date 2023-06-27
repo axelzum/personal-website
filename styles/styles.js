@@ -15,4 +15,19 @@ const StyledInfoPageContainer = styled.div`
   margin: auto;
 `;
 
-export { StyledTitleBox, StyledInfoPageContainer };
+const StyledEducationTitle = styled.div`
+  text-align: center;
+  margin: 20px;
+  
+  h2, h3 {
+    margin: 0;
+  }
+`;
+
+const StyledEducationInfoConatiner = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export { StyledTitleBox, StyledInfoPageContainer, StyledEducationTitle, StyledEducationInfoConatiner };

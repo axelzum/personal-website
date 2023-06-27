@@ -17,7 +17,7 @@ const StyledAnimateHeight = styled(AnimateHeight)`
 const Collapse = forwardRef(
   (
     {
-      isOpen,
+      isopen,
       animateOpacity = true,
       onAnimationStart,
       onAnimationEnd,
@@ -34,8 +34,8 @@ const Collapse = forwardRef(
       applyInlineTransitions={false}
       duration={duration}
       easing={easing}
-      height={isOpen ? endingHeight : startingHeight}
-      isOpen={isOpen}
+      height={isopen ? endingHeight : startingHeight}
+      isOpen={isopen}
       {...{
         onAnimationEnd,
         onAnimationStart,
