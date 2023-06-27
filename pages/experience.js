@@ -4,8 +4,6 @@ import Softronics from '../components/experience/work/softronics';
 import Collins from '../components/experience/work/collins';
 import Hyvee from '../components/experience/work/hyvee';
 import {
-    StyledEducationInfoConatiner,
-    StyledEducationTitle,
     StyledInfoPageContainer,
     StyledTitleBox,
 } from '../styles/styles';
@@ -15,6 +13,7 @@ import NewInfoSection from '../components/info-section/new-info-section';
 import GradImage from '../components/experience/images/grad-image';
 import IsuImage from '../components/experience/images/isu-image';
 import DeereImage from '../components/experience/images/deere-image';
+import {StyledEducationInfoConatiner, StyledEducationTitle} from '../components/experience/education/styles';
 
 const Experience = () => (
     <>

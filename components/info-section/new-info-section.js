@@ -29,10 +29,10 @@ const NewInfoSection = ({collapse, detail, header, image, subheader, date}) => {
                 </StyledTextContainer>
             </StyledSectionCard>
             <Collapse isopen={show}>{collapse}</Collapse>
-            <StyledReadMoreButton onClick={handleToggle}>
+            {collapse && <StyledReadMoreButton onClick={handleToggle}>
                 {!show && <div>{'Read More'}</div>}
                 {show && <div>{'Read Less'}</div>}
-            </StyledReadMoreButton>
+            </StyledReadMoreButton>}
         </StyledSection>
     );
 };
