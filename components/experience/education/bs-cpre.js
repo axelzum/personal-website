@@ -1,19 +1,18 @@
-import { StyledParagraph } from '../styles';
-
 const BachelorCprE = () => (
-  <StyledParagraph>
-    <h3>{'Honors and Awards'}</h3>
-    <ul>
-      <li>{'Class Ranking Top 2%: 2017'}</li>
-      <li>{"Named on Dean's List Every Semester"}</li>
-      <li>{'President’s Award for Competitive Excellence: 2017, 2018, 2019, 2020'}</li>
-      <li>{'Cardinal Leadership Scholar Award Level I: 2017, 2018, 2019, 2020'}</li>
-      <li>{'Freshman Engineering Merit Scholarship: 2017'}</li>
-      <li>
-        {'Roderick Seward, Flossie Ratcliffe and Helen M. Galloway Foundation Expendable Merit Scholarship: 2018, 2021'}
-      </li>
-    </ul>
-  </StyledParagraph>
+    <>
+        <h2>{'Bachelor of Science in Computer Engineering'}</h2>
+        <h4>{'College of Engineering • 3.80'}</h4>
+            {/* eslint-disable-next-line react/forbid-elements */}
+        <b>{'Graduated Magna Cum Laude with Honors Distinction'}</b>
+        <p>
+            {
+                'During my undergraduate at Iowa State, I maintained consistent academic success and was heavily involved in ' +
+                'campus life and activities. I was a leader in the freshman honors program where I was chosen to teach a class to ' +
+                'incoming freshman. I was a member of Tau Beta Pi Engineering Honors Society, and I was a 4 year leader in the ' +
+                'marching band drumline.'
+            }
+        </p>
+    </>
 );
 
 export default BachelorCprE;

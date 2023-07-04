@@ -3,8 +3,9 @@ import Image from 'next/image';
 
 const StyledGradImage = styled.div`
   max-width: 300px;
+  min-height: 200px;
+  min-width: 300px;
   display: flex;
-  flex: 1;
   border-radius: 10px;
   overflow: hidden;
 `;

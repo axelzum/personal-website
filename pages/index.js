@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import styled from 'styled-components';
-import {TypeAnimation} from 'react-type-animation';
 
 import SiteIntro from '../components/index/site-intro';
 import Resume from '../components/index/resume';
@@ -47,20 +46,7 @@ const Home = () => (
     </Head>
 
     <StyledTitle>
-        <TypeAnimation
-            sequence={[
-                'Developer',
-                500,
-                'Developer • Designer',
-                500,
-                'Developer • Designer • Teacher',
-                500,
-                'Developer • Designer • Teacher • Performer',
-                500,
-            ]}
-            speed={50}
-            wrapper='h1'
-        />
+        <h1>{'Developer – Creator – Mentor – Performer'}</h1>
     </StyledTitle>
 
     <StyledHomepageWrapper>

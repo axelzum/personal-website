@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import {StyledInfoPageContainer, StyledTitleBox} from '../styles/styles';
 import NewtonImage from '../components/activities/images/newton-image';
 import ComedyImage from '../components/activities/images/comedy-image';
-import NewInfoSection from '../components/info-section/new-info-section';
+import InfoSection from '../components/info-section/info-section';
 import BassImage from '../components/activities/images/bass-image';
 
 const StyledActivityPhotoContainer = styled.div`
@@ -35,7 +35,7 @@ const Activities = () => (
         </StyledTitleBox>
 
         <StyledInfoPageContainer>
-            <NewInfoSection
+            <InfoSection
                 date='August 2022 – Present'
                 detail='In college I marched 4 years of bass drum with the Iowa State Marching Band. Two of those years I was a section leader.
                 Today, I continue my love of music, drums, and working with groups by teaching drumline at a local high school.
@@ -43,7 +43,7 @@ const Activities = () => (
                 I have a passion for helping others grow, and challenging those I mentor to go beyond what they think their skills are.'
                 header='Newton High School Drumline Instructor • Newton, Iowa'
             />
-            <NewInfoSection
+            <InfoSection
                 date='4 Years Experience'
                 detail="For the past 4 years I have operated as a semi-professional comedian. Starting in college with an honors course about comedy,
                 I became an 'All-Star' graduate of Gavin Jerome's Comedy College and was invited to perform professionally at Stephens Auditorium in Ames, Iowa.
@@ -51,7 +51,7 @@ const Activities = () => (
                 Being able to think on my toes, be confident speaking to crowds, and skilled at reading audience reactions has helped me become a better problem solver and technical leader."
                 header='Stand-up Comedy'
             />
-            <NewInfoSection
+            <InfoSection
                 detail='Some of my other interests include collecting board games, playing the piano, running, cooking, making new drinks, and watching movies.'
             />
             <StyledActivityPhotoContainer>
