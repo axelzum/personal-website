@@ -7,7 +7,6 @@ const StyledResume = styled.a`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   margin: 20px auto;
 
   @media screen and (min-width: 950px) {
@@ -21,16 +20,13 @@ const StyledResumePhotoContainer = styled.div`
   flex: 1;
   min-width: 300px;
   max-width: 400px;
-  border: 3px solid white;
-  border-radius: 7px;
+  overflow: hidden;
+  border-radius: 10px;
   margin: 30px 20px;
 `;
 
 const StyledResumeTextContainer = styled.div`
-  display: block;
-  flex: 1;
   max-width: 400px;
-  margin: auto 20px;
   color: white;
   text-align: center;
 `;
@@ -44,10 +40,10 @@ const Resume = () => (
   >
     <StyledResumeTextContainer>
       <h1>{'Click to View or Download My Resume'}</h1>
-      <h3>{'Last Updated 1/18/2022'}</h3>
+      <h3>{'Last Updated 6/28/2023'}</h3>
     </StyledResumeTextContainer>
     <StyledResumePhotoContainer>
-      <Image height={3500} layout='intrinsic' src='/images/resume-photo.png' width={2650} />
+      <Image height={2200} layout='intrinsic' src='/images/resume-photo.png' width={1700} />
     </StyledResumePhotoContainer>
   </StyledResume>
 );

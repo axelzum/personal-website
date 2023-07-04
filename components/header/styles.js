@@ -9,12 +9,12 @@ const StyledHeader = styled.header`
   z-index: 1;
 
   @media screen and (min-width: 768px) {
-    box-shadow: 0px 0px 9px 3px rgba(41, 41, 41, 0.25);
+    box-shadow: 0 0 9px 3px rgba(41, 41, 41, 0.25);
   }
-
-  box-shadow: ${({ isOpen }) => (isOpen ? '0' : '0px 0px 9px 3px rgba(41,41,41,.25)')};
+  
+   box-shadow: ${({ isOpen }) => (isOpen ? '0' : '0px 0px 9px 3px rgba(41,41,41,.25)')};
   -webkit-box-shadow: ${({ isOpen }) => (isOpen ? '0' : '0px 0px 9px 3px rgba(41,41,41,.25)')};
-  -moz-box-shadow: ${({ isOpen }) => (isOpen ? '0' : '0px 0px 9px 3px rgba(41,41,41,.25)')};
+   -moz-box-shadow: ${({ isOpen }) => (isOpen ? '0' : '0px 0px 9px 3px rgba(41,41,41,.25)')};
 `;
 
 const StyledNameContainer = styled.div`
@@ -33,10 +33,12 @@ const StyledNameContainer = styled.div`
 
 const StyledNav = styled.nav`
   max-width: 1400px;
+  height: 100%;
   margin: auto;
 
   @media screen and (min-width: 768px) {
     display: flex;
+    height: auto;
     justify-content: space-between;
     padding-bottom: 0;
     align-items: center;
@@ -58,6 +60,7 @@ const StyledNavbarToggle = styled.div`
 
 const StyledLogoLink = styled.a`
   cursor: pointer;
+  height: 100%;
 
   div {
     display: inline-block;

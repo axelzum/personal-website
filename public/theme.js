@@ -3,6 +3,7 @@ import { ThemeProvider } from 'styled-components';
 const theme = {
   colors: {
     primary: '#223286',
+    primaryLight: '#223286D9',
   },
 };
 

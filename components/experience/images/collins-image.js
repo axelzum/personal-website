@@ -1,15 +1,16 @@
 import styled from 'styled-components';
 import Image from 'next/image';
 
-const StyledHyVeeImage = styled.div`
-  max-width: 500px;
-  max-height: 300px;
+const StyledCollinsImage = styled.div`
+  max-width: 100px;
+  max-height: 100px;
+  margin: 20px;
 `;
 
 const CollinsImage = () => (
-  <StyledHyVeeImage>
-    <Image height={880} layout='intrinsic' src='/images/logos/collins.png' width={5120} />
-  </StyledHyVeeImage>
+  <StyledCollinsImage>
+    <Image height={200} layout='intrinsic' src='/images/logos/collins.png' width={200} />
+  </StyledCollinsImage>
 );
 
 export default CollinsImage;

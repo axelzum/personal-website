@@ -21,7 +21,7 @@ const Header = () => {
   return (
     <StyledHeader isOpen={open}>
       <StyledNav ref={ref}>
-        <Link href='/'>
+        <Link href='/' passHref>
           <StyledLogoLink>
             <Image height={80} layout='fixed' src='/images/logos/icon.jpg' width={80} />
             <StyledNameContainer>

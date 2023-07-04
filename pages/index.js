@@ -5,10 +5,11 @@ import SiteIntro from '../components/index/site-intro';
 import Resume from '../components/index/resume';
 import ContactInfo from '../components/index/contact-info';
 
+
 const StyledTitle = styled.div`
   width: 100%;
   text-align: center;
-  background: ${(props) => props.theme.colors.primary};
+  background: ${(props) => props.theme.colors.primaryLight};
   color: white;
   min-height: 80px;
   display: flex;
@@ -31,7 +32,7 @@ const StyledHomepageWrapper = styled.div`
 `;
 
 const StyledBlueBackground = styled.div`
-  background: ${(props) => props.theme.colors.primary};
+  background: ${(props) => props.theme.colors.primaryLight};
   width: 100%;
   display: flex;
   justify-content: center;
@@ -45,7 +46,7 @@ const Home = () => (
     </Head>
 
     <StyledTitle>
-      <h1>{"Hello, I'm Axel Zumwalt."}</h1>
+        <h1>{'Developer – Creator – Mentor – Performer'}</h1>
     </StyledTitle>
 
     <StyledHomepageWrapper>
@@ -57,7 +58,7 @@ const Home = () => (
     </StyledBlueBackground>
 
     <StyledHomepageWrapper>
-      <ContactInfo />
+      <ContactInfo/>
     </StyledHomepageWrapper>
   </>
 );

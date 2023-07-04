@@ -1,38 +1,40 @@
-import { useState } from 'react';
-import { ChevronDown } from 'styled-icons/bootstrap';
+import {useState} from 'react';
 
 import Collapse from '../collapse';
 
 import {
-  StyledDropdownArrow,
-  StyledImageContainer,
-  StyledSection,
-  StyledSectionDetail,
-  StyledSectionHeader,
-  StyledSectionSubheader,
-  StyledTextContainer,
+    StyledReadMoreButton,
+    StyledSection,
+    StyledSectionCard,
+    StyledSectionDate,
+    StyledSectionDetail,
+    StyledSectionHeader,
+    StyledSectionSubheader,
+    StyledTextContainer,
 } from './styles';
 
-const InfoSection = ({ collapse, detail, header, image, subheader }) => {
-  const [show, setShow] = useState(false);
-  const handleToggle = () => setShow(!show);
+const InfoSection = ({collapse, detail, header, image, subheader, date}) => {
+    const [show, setShow] = useState(false);
+    const handleToggle = () => setShow(!show);
 
-  return (
-    <>
-      <StyledSection isOpen={show} onClick={handleToggle}>
-        <StyledImageContainer>{image}</StyledImageContainer>
-        <StyledTextContainer>
-          <StyledSectionHeader>{header}</StyledSectionHeader>
-          <StyledSectionSubheader>{subheader}</StyledSectionSubheader>
-          <StyledSectionDetail>{detail}</StyledSectionDetail>
-        </StyledTextContainer>
-        <StyledDropdownArrow isOpen={show}>
-          <ChevronDown />
-        </StyledDropdownArrow>
-      </StyledSection>
-      <Collapse isOpen={show}>{collapse}</Collapse>
-    </>
-  );
+    return (
+        <StyledSection>
+            <StyledSectionCard>
+                {image}
+                <StyledTextContainer>
+                    <StyledSectionHeader>{header}</StyledSectionHeader>
+                    <StyledSectionSubheader>{subheader}</StyledSectionSubheader>
+                    <StyledSectionDate>{date}</StyledSectionDate>
+                    <StyledSectionDetail>{detail}</StyledSectionDetail>
+                </StyledTextContainer>
+            </StyledSectionCard>
+            <Collapse isopen={show}>{collapse}</Collapse>
+            {collapse && <StyledReadMoreButton onClick={handleToggle}>
+                {!show && <div>{'Read More'}</div>}
+                {show && <div>{'Read Less'}</div>}
+            </StyledReadMoreButton>}
+        </StyledSection>
+    );
 };
 
 export default InfoSection;
