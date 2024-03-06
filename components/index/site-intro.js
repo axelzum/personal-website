@@ -39,16 +39,14 @@ const SiteIntro = () => (
         </StyledIntroPhotoContainer>
         <StyledIntroTextContainer>
             <h2>
-                {'I am an accomplished Software Engineer with over 5 years of industry experience creating successful solutions. '}
+                {'I am an expert Software Engineer and MBA with over 5 years of diverse industry experiences.'}
             </h2>
             <h2>
-                {'My diverse portfolio of expertise across multiple industries includes an advanced understanding of the ReactJS Framework and corresponding testing patterns. ' +
-                    'I am also passionate about identifying opportunities for improvement and creating and executing plans with others to see that improvement.'}
+                {'I specialize in full stack development with ReactJS and NodeJS/Java Spring. ' +
+                  'I am very experienced in designing optimal solutions for React state management and unit testing.'}
             </h2>
             <h2>
-                {
-                    'I hope to support your creative endeavor as an organized problem-solver proficient in communication, leadership, and execution.'
-                }
+                {'I hope to support your creative endeavor as a problem-solver proficient in communication, leadership, and execution.'}
             </h2>
         </StyledIntroTextContainer>
     </StyledIntro>

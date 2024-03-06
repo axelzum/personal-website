@@ -37,22 +37,19 @@ const Activities = () => (
         <StyledInfoPageContainer>
             <InfoSection
                 date='August 2022 – Present'
-                detail='In college I marched 4 years of bass drum with the Iowa State Marching Band. Two of those years I was a section leader.
-                Today, I continue my love of music, drums, and working with groups by teaching drumline at a local high school.
-                This position involves planning and writing shows, organising rehearsals, and teaching and coaching students to be the best drummers they can be.
+                detail='In college I served as the bass drum section leader for the Iowa State Marching Band Drumline.
+                Today, I continue my love of music as an instructor for the Newton High School Band.
+                This position involves creating show design, writing music, organising rehearsal, and teaching/coaching students to be percussionists and leaders.
                 I have a passion for helping others grow, and challenging those I mentor to go beyond what they think their skills are.'
                 header='Newton High School Drumline Instructor • Newton, Iowa'
             />
             <InfoSection
-                date='4 Years Experience'
-                detail="For the past 4 years I have operated as a semi-professional comedian. Starting in college with an honors course about comedy,
-                I became an 'All-Star' graduate of Gavin Jerome's Comedy College and was invited to perform professionally at Stephens Auditorium in Ames, Iowa.
-                I now continue to do open-mics and small local venues. The skills I've learned as a comedian translate directly into the workplace.
-                Being able to think on my toes, be confident speaking to crowds, and skilled at reading audience reactions has helped me become a better problem solver and technical leader."
+                detail="Since becoming an 'All-Star' graduate of Gavin Jerome's Comedy College in 2019, I have enjoyed occasionally performing as an ameteur comedian.
+                Skills like improv thinking and execution, confidence speaking to crowds, and reading audience reactions have helped me become a better problem solver and technical leader in the workplace."
                 header='Stand-up Comedy'
             />
             <InfoSection
-                detail='Some of my other interests include collecting board games, playing the piano, running, cooking, making new drinks, and watching movies.'
+                detail='Some of my other interests include collecting board games, playing the piano, outdoor adventures, cooking, and watching movies.'
             />
             <StyledActivityPhotoContainer>
                 <NewtonImage/>

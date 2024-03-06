@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { EmailOutline, PhoneOutline } from 'styled-icons/evaicons-outline';
+import { EmailOutline } from 'styled-icons/evaicons-outline';
 import { Github, LinkedinSquare } from 'styled-icons/boxicons-logos';
 
 const StyledContactInfoContainer = styled.div`
@@ -38,10 +38,6 @@ const ContactInfo = () => (
     <StyledContactInfoCard href='mailto: axelzum@gmail.com' rel='noopener noreferrer' target='_blank'>
       <EmailOutline />
       <p>{'axelzum@gmail.com'}</p>
-    </StyledContactInfoCard>
-    <StyledContactInfoCard href='tel: 319-389-8064' rel='noopener noreferrer' target='_blank'>
-      <PhoneOutline />
-      <p>{'319-389-8064'}</p>
     </StyledContactInfoCard>
     <StyledContactInfoCard href='https://linkedin.com/in/axel-zumwalt' rel='noopener noreferrer' target='_blank'>
       <LinkedinSquare />

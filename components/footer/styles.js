@@ -5,25 +5,16 @@ const StyledFooter = styled.footer`
   height: 80px;
   border-top: thin solid;
   margin-top: 30px;
+  display: flex;
+  align-items: center;
 `;
 
 const StyledFooterInfoContainer = styled.div`
-  max-width: 1400px;
-  padding: 10px;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-`;
-
-const StyledContactInfo = styled.div`
-  padding-left: 30px;
-  position: relative;
-  left: 0;
-
-  p {
-    margin: 0;
+  padding-left: 10px;
+  
+  a {
+    text-decoration-line: underline;
   }
 `;
 
-export { StyledFooter, StyledFooterInfoContainer, StyledContactInfo };
+export { StyledFooter, StyledFooterInfoContainer };

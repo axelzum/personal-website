@@ -46,7 +46,7 @@ const Home = () => (
     </Head>
 
     <StyledTitle>
-        <h1>{'Developer – Creator – Mentor – Performer'}</h1>
+        <h1>{'Solver – Influencer – Mentor'}</h1>
     </StyledTitle>
 
     <StyledHomepageWrapper>

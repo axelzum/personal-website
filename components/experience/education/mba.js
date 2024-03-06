@@ -5,8 +5,8 @@ const MasterBusinessAdministration = () => (
         <h4>{'Ivy College of Business • 3.82'}</h4>
         <p>
             {
-                'Ivy is home to the #25 MBA program among public universities. For my MBA experience I collaborated with a team of 4 ' +
-                'professionals in a cohort of 60 students to learn about common business problems and the tools to solve them.'
+                'Ivy is home to the #25 MBA program among public universities. For my MBA experience I collaborated with others in team of 4 ' +
+                'professionals to learn about common business problems and the tools to solve them.'
             }
         </p>
         <p>
