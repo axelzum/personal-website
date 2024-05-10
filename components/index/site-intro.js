@@ -42,8 +42,8 @@ const SiteIntro = () => (
                 {'I am an expert Software Engineer and MBA with over 5 years of diverse industry experiences.'}
             </h2>
             <h2>
-                {'I specialize in full stack development with ReactJS and NodeJS/Java Spring. ' +
-                  'I am very experienced in designing optimal solutions for React state management and unit testing.'}
+                {'I specialize in full stack web development with React, Redux, NodeJS, and Java Spring, ' +
+                  'but I have proven myself as a problem solver in multiple other domains as well.'}
             </h2>
             <h2>
                 {'I hope to support your creative endeavor as a problem-solver proficient in communication, leadership, and execution.'}
