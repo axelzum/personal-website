@@ -1,6 +1,6 @@
 module.exports = {
-  extends: 'get-off-my-lawn',
-  ignorePatterns: ['/node_modules/', '/.next/', '/.idea/'],
+  extends: ['get-off-my-lawn'],
+  ignorePatterns: ['/node_modules/', '/.next/', '/.idea/', '_app.js'],
   rules: {
     // enable additional rules, override rule options, or disable rules
     'comma-dangle': ['error', 'always-multiline'],
