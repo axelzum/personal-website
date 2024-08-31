@@ -65,7 +65,6 @@ const StyledMainNav = styled.ul`
     color: ${(props) => props.theme.colors.primary};
     text-decoration-line: underline;
     text-decoration-thickness: 3px;
-    //text-underline-offset: 4px;
   }
 
   a {

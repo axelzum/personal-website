@@ -7,7 +7,7 @@ const StyledIntro = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20px auto 0;
+  margin: 20px auto;
 
   @media screen and (min-width: 950px) {
     flex-direction: row;
@@ -19,7 +19,7 @@ const StyledIntroPhotoContainer = styled.div`
   display: flex;
   flex: 1;
   min-width: 300px;
-  max-width: 600px;
+  max-width: 400px;
   border-radius: 10px;
   overflow: hidden;
   margin: auto 20px;
@@ -35,15 +35,15 @@ const StyledIntroTextContainer = styled.div`
 const SiteIntro = () => (
     <StyledIntro>
         <StyledIntroPhotoContainer>
-            <Image height={4069} layout='intrinsic' priority src='/images/portrait.jpeg' width={4747}/>
+            <Image height={2918} layout='intrinsic' priority src='/images/portrait3.jpeg' width={2918}/>
         </StyledIntroPhotoContainer>
         <StyledIntroTextContainer>
             <h2>
-                {'I am an expert Software Engineer and MBA with over 5 years of diverse industry experiences.'}
+                {'I am an expert Fullstack Software Engineer and MBA with over 5 years of diverse industry experiences.'}
             </h2>
             <h2>
-                {'I specialize in full stack web development with React, Redux, NodeJS, and Java Spring, ' +
-                  'but I have proven myself as a problem solver in multiple other domains as well.'}
+                {'From building complex user interfaces in React and Java to designing robust API solutions with Spring and Node.js, '+
+                'my depth of technical experience allows me to work effectivly in any domain.'}
             </h2>
             <h2>
                 {'I hope to support your creative endeavor as a problem-solver proficient in communication, leadership, and execution.'}

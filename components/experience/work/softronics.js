@@ -7,7 +7,7 @@ const Softronics = () => (
         <p>
             {'Supported the office manager and product manufacturing section of the business. ' +
                 'Catalogued and sorted the company\'s electrical component stock in a searchable inventory to make finding parts easier. ' +
-                'Assisted production team with wiring and soldering assembly, and performed quality assurance testing on circuit boards'}
+                'Assisted production team with wiring and soldering assembly and performed quality assurance testing on circuit boards'}
         </p>
         <h4>{'Software Engineering Intern (2nd work-term) • June 2017-August 2017'}</h4>
         <p>
@@ -17,16 +17,15 @@ const Softronics = () => (
         <h4>{'Mechanical Engineering Intern (3rd work-term) • May 2018-August 2018'}</h4>
         <p>
             {'Implemented a company wide Solidworks product data management system to give engineers easier part file access and data loss protection. ' +
-                'For this task I used my knowledge as a programmer to greatly speed up migration time and cut costs.'}
+                'For this task I wrote automation scripts using VBA to greatly speed up migration time and cut costs.'}
         </p>
 
         <h3>{'Skills'}</h3>
         <ul>
             <li>{'Organizational skills and productive operations techniques for a small components inventory.'}</li>
-            <li>{'Understanding and upholding business quality standards through product testing.'}</li>
+            <li>{'Understanding and upholding ISO quality standards through product testing.'}</li>
             <li>{'Basic electrical assembly skills, soldering, reading wiring diagrams.'}</li>
-            <li>{'Problem solving and research skills to operate an embedded development board.'}</li>
-            <li>{'Data parsing and radio and GPS protocols.'}</li>
+            <li>{'Embedded systems data parsing and radio and GPS protocols.'}</li>
             <li>{'Web-scraping and data manipulation automation with VBA in Microsoft Excel.'}</li>
             <li>{'Following design drawings to create models in Solidworks.'}</li>
         </ul>

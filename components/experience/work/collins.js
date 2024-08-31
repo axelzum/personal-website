@@ -4,7 +4,7 @@ const Collins = () => (
     <StyledParagraph>
         <h3>{'Roles and Responsibilities'}</h3>
         <p>
-            {'Wrote object-oriented Java code to comply with product software requirements. ' +
+            {'Wrote object-oriented Java modules in the OSGi framework to comply with strict product requirements. ' +
                 'This included TCP message handling and data display, data validation, resolving defects, and user interface design.' +
                 'For all code that I wrote, I also wrote strict business logic GUI tests with a Python testing framework.'}
         </p>
@@ -20,8 +20,6 @@ const Collins = () => (
             <li>{'TCP/IP message sending and receiving of data packages.'}</li>
             <li>{'User interface design with Eclipse RCP and implementation in a reusable software package.'}</li>
             <li>{'Python GUI testing with the Squish framework.'}</li>
-            <li>{'Agile methodologies as a developer and a scrum master.'}</li>
-            <li>{'Git workflows on a large software development team.'}</li>
             <li>{'Scrum master duties: managing team story board and schedule and story writing'}</li>
         </ul>
     </StyledParagraph>

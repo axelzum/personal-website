@@ -45,14 +45,14 @@ const AppLayout = ({ Component, pageProps }) => (
         <meta property='og:url' content='https://axelzum.vercel.app/' />
         <meta property='og:title' content='Axel Zumwalt - Career Portfolio' />
         <meta property='og:description' content='Explore work, experience, and projects of Axel Zumwalt' />
-        <meta property='og:image' content='/images/portrait2.JPG' />
+        <meta property='og:image' content='/images/portrait4.jpeg' />
 
         {/* Twitter */}
         <meta property='twitter:card' content='summary_large_image' />
         <meta property='twitter:url' content='https://axelzum.vercel.app/' />
         <meta property='twitter:title' content='Axel Zumwalt - Career Portfolio' />
         <meta property='twitter:description' content='Explore work, experience, and projects of Axel Zumwalt' />
-        <meta property='twitter:image' content='/images/portrait2.JPG' />
+        <meta property='twitter:image' content='/images/portrait4.jpeg' />
 
         {/* Century Gothic Font */}
         <link href='https://use.typekit.net/oov2wcw.css' rel='stylesheet' />

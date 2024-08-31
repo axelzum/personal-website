@@ -36,11 +36,11 @@ const Experience = () => (
             <InfoSection
                 collapse={<Deere/>}
                 date='June 2022 – Present'
-                detail='John Deere Operations Center is ab application suite for farm data management. At ISG, I worked as a front-end
-                React developer supporting applications for land data management and enabling farmers to have better access to their data in the tractor cab.'
-                header='John Deere, Intelligent Solutions Group • Urbandale, Iowa'
+                detail='As part of a rotational program I held two fullstack web development positions with John Deere. At Intelligent Solutions Group I worked on land data managment applications. 
+                At John Deere Financial I built software that facilitates the creation and submission of installment and lease financing applications.'
+                header='John Deere • Des Moines, Iowa'
                 image={<DeereImage/>}
-                subheader='Software Engineer ITDP II, Operations Center Web'
+                subheader='Software Engineer II'
             />
             <InfoSection
                 collapse={<Hyvee/>}
@@ -53,7 +53,7 @@ const Experience = () => (
             <InfoSection
                 collapse={<Collins/>}
                 date='May 2019 – August 2020'
-                detail='Test and Training Instrumentation designs and manufactures mission critical air combat test and training equipment (think Top Gun).
+                detail='Test and Training Instrumentation designs and manufactures mission critical air combat test and training equipment.
                 As a Java application developer in this domain, I created and tested a system control application to strict government quality assurance standards.'
                 header='Collins Aerospace, Mission Systems • Cedar Rapids, Iowa'
                 image={<CollinsImage/>}

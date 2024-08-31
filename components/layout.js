@@ -5,7 +5,12 @@ import Footer from './footer/footer';
 
 const StyledLayout = styled.div`
   width: 100%;
-  margin: 120px 0 0 0;
+  margin: 80px 0 0 0;
+  font-size: .75rem;
+
+  @media screen and (min-width: 950px) {
+    font-size: 1rem;
+  }
 `;
 
 const StyledFlexWrapper = styled.div`

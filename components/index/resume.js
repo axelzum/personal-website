@@ -33,14 +33,14 @@ const StyledResumeTextContainer = styled.div`
 
 const Resume = () => (
   <StyledResume
-    href='/files/Zumwalt_Axel Resume.pdf'
+    href='/files/Axel Zumwalt Resume.pdf'
     rel='noopener noreferrer'
     target='_blank'
     title="Axel Zumwalt's Resume"
   >
     <StyledResumeTextContainer>
       <h1>{'Click to View or Download My Resume'}</h1>
-      <h3>{'Last Updated 5/9/2024'}</h3>
+      <h3>{'Last Updated 8/31/2024'}</h3>
     </StyledResumeTextContainer>
     <StyledResumePhotoContainer>
       <Image height={2200} layout='intrinsic' src='/images/resume-photo.png' width={1700} />
