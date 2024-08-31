@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import { Analytics } from '@vercel/analytics/react';
 import Head from 'next/head';
 
 import Layout from '../components/layout';
@@ -58,6 +59,7 @@ const AppLayout = ({ Component, pageProps }) => (
         <link href='https://use.typekit.net/oov2wcw.css' rel='stylesheet' />
       </Head>
       <Component {...pageProps} />
+      <Analytics />
     </Layout>
   </Theme>
 );

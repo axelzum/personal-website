@@ -11,6 +11,7 @@
     "test": "prettier --check . && yarn lint"
   },
   "dependencies": {
+    "@vercel/analytics": "1.3.1",
     "eslint": "8.42.0",
     "next": "12.2.6",
     "react": "18.2.0",
